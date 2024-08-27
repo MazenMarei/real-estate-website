@@ -1,0 +1,13 @@
+Note: Remove Register button from the navbar
+ 
+
+
+
+Fonts: 
+
+<link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,500,600,700&amp;display=swap" rel="stylesheet" data-optimized-fonts="true">
+
+
+Colors:
+color-primary: #ff5a5f;
+color-secondary:#24324a;
