@@ -1,0 +1,112 @@
+
+@import url(./style.css);
+
+
+.primary-color {
+    color: var(--primary) !important;
+  }
+  
+  .secondary-color {
+    color: var(--secondary) !important;
+  }
+  
+  .light-secondary-color {
+    color: var(--light-secondary) !important;
+  }
+  
+  .light-primary-color {
+    color: var(--light-primary) !important;
+  }
+  
+  .lighter-primary-color {
+    color: var(--lighter-primary) !important;
+  }
+  
+  .lighter-secondary-color {
+    color: var(--lighter-secondary) !important;
+  }
+  
+  .dark-secondary-color {
+    color: var(--dark-secondary) !important;
+  }
+  
+  .darker-secondary-color {
+    color: var(--darker-secondary) !important;
+  }
+  
+  .overlay-dark-color {
+    color: var(--overlay-dark) !important;
+  }
+
+  .overlay-lighter-dark-color {
+    color: var(--overlaay-lighter-dark) !important;
+  }
+  
+  .gray-text-color {
+    color: var(--gray-text) !important;
+  }
+  
+  .primary-bg {
+    background-color: var(--primary) !important;
+  }
+  
+  .secondary-bg {
+    background-color: var(--secondary) !important;
+  }
+  
+  .light-secondary-bg {
+    background-color: var(--light-secondary) !important;
+  }
+  
+  .light-primary-bg {
+    background-color: var(--light-primary) !important;
+  }
+  
+  .lighter-primary-bg {
+    background-color: var(--lighter-primary) !important;
+  }
+  
+  .lighter-secondary-bg {
+    background-color: var(--lighter-secondary) !important;
+  }
+  
+  .dark-secondary-bg {
+    background-color: var(--dark-secondary) !important;
+  }
+  
+  .darker-secondary-bg {
+    background-color: var(--darker-secondary) !important;
+  }
+  
+  .overlay-dark-bg {
+    background-color: var(--overlay-dark) !important;
+  }
+
+  .overlay-lighter-dark-bg {
+    background-color: var(--overlaay-lighter-dark) !important;
+  }
+  
+  .gray-text-bg {
+    background-color: var(--gray-text) !important;
+  }
+  .black-50-bg {
+    background-color: rgba(15, 21, 31, 0.5) !important;
+  }
+
+  .primary-color-hover:hover {
+    color: var(--primary) !important;
+  }
+
+  .primary-bg-hover:hover {
+    background-color: var(--primary) !important;
+  }
+
+
+  .primary-outline-focus:focus {
+    box-shadow:  0 0 0 0.25rem var(--light-primary)  !important;
+  }
+
+
+  .pointer-hover:hover {
+    cursor: pointer;
+  }
