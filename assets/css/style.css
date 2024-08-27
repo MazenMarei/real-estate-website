@@ -1,0 +1,45 @@
+
+/* importing Nunito font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+
+/* setting the font family */
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+:root {
+    --primary: rgb(255, 90, 95);
+    --secondary: rgb(36, 50, 74);
+
+    --light-secondary: rgb(62, 76, 102);
+    --light-primary: rgb(255, 120, 124);
+
+    --lighter-primary: rgb(255, 232, 233);
+    --lighter-secondary: rgb(138, 153, 179);
+
+    --dark-secondary: rgb(29, 41, 62);
+    --darker-secondary: rgb(20, 30, 47);
+
+
+    --gray-text: rgb(72, 72, 72);
+}
+
+
+
+
+svg:nth-child(1) {
+    color: var(--primary);
+}
+
+svg:nth-child(2) {
+    color: var(--secondary);
+}
+
+svg:nth-child(3) {
+    color: var(--light-primary);
+}
+
+svg:nth-child(4) {
+    color: var(--light-secondary);
+}
