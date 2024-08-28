@@ -42,8 +42,4 @@ $(document).ready(() => {
       event.target.reset();
     }
   });
-
-
-
-
 });
