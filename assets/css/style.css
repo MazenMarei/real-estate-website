@@ -30,9 +30,11 @@
   --overlaay-lighter-dark: rgba(62, 76, 102, 0.4);
 
   --gray-text: rgb(72, 72, 72);
+  --light-gray-text: rgb(138, 153, 179);
 
-  --black-50-bg : rgba(15, 21, 31, 0.5)
+  --black-50-bg: rgba(15, 21, 31, 0.5);
 }
+
 /* start of the home page */
 
 /* home page image title responsive */
@@ -45,7 +47,6 @@
 /* Featured Properties cards overlay effect */
 
 #homeFeaturedProperties {
-
   .card-overlay {
     transition: all 0.5s;
     overflow: hidden;
@@ -80,11 +81,6 @@
   .card:hover {
     box-shadow: 0 0 10px var(--overlaay-lighter-dark);
   }
-
-
-  
-
- 
 }
 
 /* end of the home page */

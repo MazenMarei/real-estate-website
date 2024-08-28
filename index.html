@@ -112,6 +112,46 @@
       </div>
     </nav>
 
+    <!-- -------------------- toast notification container --------------------- -->
+
+    <div
+      aria-live="polite"
+      aria-atomic="true"
+      class="position-sticky top-0 end-0 z-3"
+    >
+      <div class="toast-container top-0 end-0 p-3 z-3 overflow-hidden">
+        <!-- ------------------------ subscribe email toast ------------------------ -->
+        <div
+          class="toast top-0 end-0 toast-loading"
+          data-bs-delay="4550"
+          role="alert"
+          id="my-toast"
+          aria-live="assertive"
+          aria-atomic="true"
+          data-autohide="false"
+        >
+          <div class="toast-header">
+            <div class="d-flex flex-row align-items-center gap-4">
+              <div>
+                <i class="fa-solid fa-circle-check text-success fs-3"></i>
+              </div>
+              <div>
+                <strong class="me-auto">Subscribed Successfully!!</strong>
+              </div>
+              <div class="ms-5">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="toast"
+                  aria-label="Close"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- ----------------------------- main image section ------------------------------ -->
     <section id="homeMainImage">
       <div
@@ -285,9 +325,7 @@
               </div>
             </div>
             <div class="card-footer bg-transparent">
-                <div class="row">
-                    
-                </div>
+              <div class="row"></div>
             </div>
           </div>
           <!-- ----------------------------- property card ------------------------------ -->
@@ -489,6 +527,200 @@
         </div>
       </div>
     </section>
+
+    <!-- --------------------------- footer section ---------------------------- -->
+    <footer class="w-100 secondary-bg justify-content-center p-5">
+      <div class="container pt-5">
+        <div class="row pt-3">
+          <!-- ----------------------------- about site ----------------------------- -->
+          <div class="col-lg-3 col-sm-6 col-12">
+            <h4 class="text-capitalize text-white fw-bold mb-4">about site</h4>
+            <p class="light-gray-text-color fs-6 fw-semibold">
+              We're reimagining how you buy, sell and rent. It's now easier to
+              get into a place you love. So let's do this, together.
+            </p>
+          </div>
+
+          <!-- ----------------------------- Quick Links ----------------------------- -->
+          <div class="col-lg-3 col-sm-6 col-12">
+            <h4 class="text-capitalize text-white fw-bold mb-4">Quick Links</h4>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a
+                  href="#"
+                  class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                  >about us</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#"
+                  class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                  >terms & conditions</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#"
+                  class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                  >user's guide</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#"
+                  class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                  >support center</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="#"
+                  class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                  >press info</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- ----------------------------- contaact us ----------------------------- -->
+          <div class="col-lg-3 col-sm-6 col-12">
+            <h4 class="text-capitalize text-white fw-bold mb-4">contaact us</h4>
+            <ul class="list-unstyled">
+              <li class="mb-3">
+                <a
+                  href="mailto:info@findhouse.com"
+                  class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                  >info@findhouse.com</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                  class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                  >Collins Street West, Victoria</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                  class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                  >8007, Australia.</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="tel:+1 246-345-0699"
+                  class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                  >+1 246-345-0699</a
+                >
+              </li>
+              <li class="mb-3">
+                <a
+                  href="tel:+1 246-345-0695"
+                  class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                  >+1 246-345-0695</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- ----------------------------- social media ----------------------------- -->
+          <div class="col-lg-3 col-sm-6 col-12">
+            <h4 class="text-capitalize text-white fw-bold mb-4">follow us</h4>
+            <ul class="list-unstyled flex-row d-flex gap-4">
+              <li class="mb-3">
+                <a
+                  href="mailto:info@findhouse.com"
+                  class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                >
+                  <i class="fs-5 fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="mb-3">
+                <a
+                  href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                  class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                  ><i class="fs-5 fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li class="mb-3">
+                <a
+                  href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                  class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                  ><i class="fs-5 fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li class="mb-3">
+                <a
+                  href="tel:+1 246-345-0699"
+                  class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                  ><i class="fs-5 fa-brands fa-pinterest"></i
+                ></a>
+              </li>
+              <li class="mb-3">
+                <a
+                  href="tel:+1 246-345-0695"
+                  class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                  ><i class="fs-5 fa-solid fa-globe"></i
+                ></a>
+              </li>
+            </ul>
+
+            <!-- ----------------------------- subscribe ----------------------------- -->
+            <h4 class="text-capitalize text-white fw-bold mb-4">Subscribe</h4>
+            <form
+              id="subscribeForm"
+              class="needs-validation d-flex f-row gap-3"
+              novalidate
+            >
+              <div class="position-relative">
+                <input
+                  type="email"
+                  id="subscribeEmail"
+                  class="form-control rounded-pill"
+                  aria-describedby="validationServerEmailSubcribe"
+                  required
+                  placeholder="Enter your email"
+                />
+                <div
+                  id="validationServerEmailSubcribe"
+                  class="invalid-feedback position-absolute"
+                >
+                  Please Enter Your Email.
+                </div>
+              </div>
+              <button
+                class="btn primary-bg text-white rounded-circle"
+                type="submit"
+                data-bs-target="#my-toast"
+              >
+                <i class="fa-solid fa-angle-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+    <div class="container">
+      <div class="row p-5">
+        <button class="d-lg-none" id="tot">
+          show
+        </button>
+        <div class="card tot-card d-lg-block d-none" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- -------------------------- importing jquery --------------------------- -->
     <script src="./assets/js/jquery-3.7.1.min.js"></script>

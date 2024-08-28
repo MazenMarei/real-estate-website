@@ -1,0 +1,17 @@
+@keyframes toastAnimation {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+  }
+
+  
+  @keyframes toastLoading {
+
+    100% {
+      width: 0;
+    }
+    
+  }
