@@ -75,6 +75,7 @@
   }
   .card {
     transition: all 0.5s;
+    min-width: 360px;
   }
   .card:hover {
     box-shadow: 0 0 10px var(--overlaay-lighter-dark);
