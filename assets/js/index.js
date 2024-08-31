@@ -81,5 +81,24 @@ $(document).ready(() => {
     );
   });
 
-  
+  /* -------------------------- auto play modal video ------------------------- */
+
+  document
+    .getElementById("videoModal")
+    .addEventListener("shown.bs.modal", () => {
+      $("#aboutUsVideo").attr(
+        "src",
+        $("#aboutUsVideo").attr("src") + "&autoplay=1"
+      );
+    });
+
+  /* -------------------- close video after modal is closed ------------------- */
+  document
+    .getElementById("videoModal")
+    .addEventListener("hidden.bs.modal", () => {
+      $("#aboutUsVideo").attr(
+        "src",
+        $("#aboutUsVideo").attr("src").replace("&autoplay=1", "")
+      );
+    });
 });

@@ -35,3 +35,16 @@
     opacity: 0;
   }
 }
+
+
+@keyframes loading {
+  0% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+  50% {
+    transform: scale(1.4) translate(-35%, -35%);
+  }
+  100% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
