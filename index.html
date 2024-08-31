@@ -150,6 +150,14 @@
         </div>
       </div>
     </div>
+    <!-- -------------------------- scroll up button --------------------------- -->
+    <button
+      class="btn secondary-bg rounded-circle scroll-up-btn position-fixed z-3 bottom-0 end-0 me-3 mb-3 d-none"
+      id="scrollUpBtn"
+    >
+      <i class="fa-solid fa-arrow-up primary-color fs-3"></i>
+    </button>
+
 
     <!-- ----------------------------- main image section ------------------------------ -->
     <section id="homeMainImage">
@@ -180,8 +188,8 @@
 
     <!-- --------------------- featured properties section --------------------- -->
 
-    <section id="homeFeaturedProperties">
-      <div class="container py-5">
+    <section id="homeFeaturedProperties" class="light-gray-bg">
+      <div class="container-fluid py-5">
         <!-- ----------------------------- header row ------------------------------ -->
         <div class="row text-center gray-text-color pt-5">
           <h1 class="fw-bold">Featured Properties</h1>
@@ -189,9 +197,170 @@
         </div>
 
         <!-- ----------------------------- properties row ------------------------------ -->
-        <div class="row w-100 justify-content-center gap-5 mx-auto">
+        <div class="row w-100 justify-content-center gap-4 mx-auto">
           <!-- ----------------------------- property card ------------------------------ -->
-          <div class="card col-lg-3 col-sm-5 col-10 pt-3 p-0">
+          <div
+            class="card col-lg-3 col-sm-5 col-10 pt-2 p-0 gray-border border-0"
+          >
+            <!-- -------------------------- image card slider -------------------------- -->
+            <div class="px-2">
+              <div
+                id="carouselExample"
+                class="carousel slide position-relative overflow-hidden rounded-3"
+              >
+                <!-- ---------------------------- slider images ---------------------------- -->
+                <div class="carousel-inner">
+                  <!-- ---------------------------- slider image ----------------------------- -->
+                  <div class="carousel-item active">
+                    <img
+                      src="./assets/images/8-850x550.jpg"
+                      class="d-block w-100"
+                      alt="property image"
+                    />
+                  </div>
+                  <!-- ---------------------------- slider image ----------------------------- -->
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/9-850x550.jpg"
+                      class="d-block w-100"
+                      alt="property image"
+                    />
+                  </div>
+                  <!-- ---------------------------- slider image ----------------------------- -->
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/12-1-850x550.jpg"
+                      class="d-block w-100"
+                      alt="property image"
+                    />
+                  </div>
+                  <!-- ---------------------------- slider image ----------------------------- -->
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/13-850x550.jpg"
+                      class="d-block w-100"
+                      alt="property image"
+                    />
+                  </div>
+                  <!-- ---------------------------- slider image ----------------------------- -->
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/14-850x550.jpg"
+                      class="d-block w-100"
+                      alt="property image"
+                    />
+                  </div>
+                </div>
+
+                <!-- -------------------------- slider control buttons -------------------------- -->
+                <div
+                  class="card-overlay container overlay-lighter-dark-bg w-100 h-100 z-1 top-0 position-absolute"
+                >
+                  <div class="row">
+                    <!-- ----------------------------- prev button ----------------------------- -->
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExample"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <!-- ----------------------------- next button ----------------------------- -->
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExample"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- --------------------- price , love , compare row ---------------------- -->
+
+                <div class="container position-absolute bottom-0 z-1 w-100">
+                  <div
+                    class="row justify-content-start pb-2 gap-4 align-items-center"
+                  >
+                    <h3
+                      class="col-5 col-sm-6 col-lg-7 text-white fw-bold align-bottom align-items-center"
+                    >
+                      $1300<span class="fs-5">/mo</span>
+                    </h3>
+                    <div
+                      class="col-4 d-flex flex-row justify-content-end gap-2"
+                    >
+                      <i
+                        class="fa-solid fa-right-left fs-4 bg-opacity-50 p-2 text-white black-50-bg rounded primary-bg-hover"
+                      ></i>
+
+                      <i
+                        class="fa-regular fa-heart fs-4 bg-opacity-50 p-2 text-white black-50-bg rounded primary-bg-hover"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ----------------------------- card body ----------------------------- -->
+            <div class="card-body">
+              <div class="card-title">
+                <p class="primary-color fw-semibold fs-5">Apartment</p>
+                <h4 class="gray-text-color fw-bold">Luxury Family Home</h4>
+              </div>
+              <div class="d-flex flex-row gap-1 align-items-center text-center">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="gray-text-color my-auto">
+                  1421 San Pedro St, Los Angeles, CA 900015
+                </p>
+              </div>
+
+              <div class="flex-row d-flex gap-5 mt-3 ps-1">
+                <p>Beds: 1</p>
+                <p>Bath: 1</p>
+                <p>SqFt: 8280</p>
+              </div>
+            </div>
+
+            <!-- ----------------------------- card footer ----------------------------- -->
+            <div class="card-footer bg-transparent">
+              <div class="row p-3 px-1">
+                <!-- ----------------------------- profile row ----------------------------- -->
+                <div class="d-flex flex-row col-8 gap-2">
+                  <div class="col-3 rounded-circle p-1">
+                    <img
+                      src="./assets/images/5.jpg"
+                      alt="profile"
+                      class="rounded-circle w-100"
+                    />
+                  </div>
+                  <div class="col-8 h-100 d-flex align-items-end pt-3">
+                    <p class="text-capitalize gray-text-color">ali tufan</p>
+                  </div>
+                </div>
+                <!-- --------------------------- posted time row --------------------------- -->
+                <div class="d-flex col-4 align-items-end justify-content-end">
+                  <p class="p-0">1 day ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ----------------------------- property card ------------------------------ -->
+          <div
+            class="card col-lg-3 col-sm-5 col-10 pt-2 p-0 gray-border border-0"
+          >
             <!-- -------------------------- image card slider -------------------------- -->
             <div class="px-2">
               <div
@@ -323,205 +492,610 @@
                 <p>SqFt: 8280</p>
               </div>
             </div>
+
+            <!-- ----------------------------- card footer ----------------------------- -->
             <div class="card-footer bg-transparent">
-              <div class="row"></div>
+              <div class="row p-3 px-1">
+                <!-- ----------------------------- profile row ----------------------------- -->
+                <div class="d-flex flex-row col-8 gap-2">
+                  <div class="col-3 rounded-circle p-1">
+                    <img
+                      src="./assets/images/5.jpg"
+                      alt="profile"
+                      class="rounded-circle w-100"
+                    />
+                  </div>
+                  <div class="col-8 h-100 d-flex align-items-end pt-3">
+                    <p class="text-capitalize gray-text-color">ali tufan</p>
+                  </div>
+                </div>
+                <!-- --------------------------- posted time row --------------------------- -->
+                <div class="d-flex col-4 align-items-end justify-content-end">
+                  <p class="p-0">1 day ago</p>
+                </div>
+              </div>
             </div>
           </div>
           <!-- ----------------------------- property card ------------------------------ -->
-          <div class="card col-lg-3 col-sm-5 col-10 pt-3">
+          <div
+            class="card col-lg-3 col-sm-5 col-10 pt-2 p-0 gray-border border-0"
+          >
             <!-- -------------------------- image card slider -------------------------- -->
-            <div id="carouselExample" class="carousel slide position-relative">
-              <div class="carousel-inner">
-                <!-- ---------------------------- slider image ----------------------------- -->
-                <div class="carousel-item active">
-                  <img
-                    src="./assets/images/8-850x550.jpg"
-                    class="d-block w-100"
-                    alt="proparty image"
-                  />
-                </div>
-                <!-- ---------------------------- slider image ----------------------------- -->
-                <div class="carousel-item">
-                  <img
-                    src="./assets/images/9-850x550.jpg"
-                    class="d-block w-100"
-                    alt="proparty image"
-                  />
-                </div>
-                <!-- ---------------------------- slider image ----------------------------- -->
-                <div class="carousel-item">
-                  <img
-                    src="./assets/images/12-1-850x550.jpg"
-                    class="d-block w-100"
-                    alt="proparty image"
-                  />
-                </div>
-                <!-- ---------------------------- slider image ----------------------------- -->
-                <div class="carousel-item">
-                  <img
-                    src="./assets/images/13-850x550.jpg"
-                    class="d-block w-100"
-                    alt="proparty image"
-                  />
-                </div>
-                <!-- ---------------------------- slider image ----------------------------- -->
-                <div class="carousel-item">
-                  <img
-                    src="./assets/images/14-850x550.jpg"
-                    class="d-block w-100"
-                    alt="proparty image"
-                  />
-                </div>
-              </div>
-
-              <!-- -------------------------- slider control buttons -------------------------- -->
+            <div class="px-2">
               <div
-                class="card-overlay container overlay-lighter-dark-bg w-100 h-100 z-1 top-0 position-absolute"
+                id="carouselExample"
+                class="carousel slide position-relative overflow-hidden rounded-3"
               >
-                <div class="row">
-                  <!-- ----------------------------- prev button ----------------------------- -->
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExample"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-
-                  <!-- ----------------------------- next button ----------------------------- -->
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExample"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
+                <!-- ---------------------------- slider images ---------------------------- -->
+                <div class="carousel-inner">
+                  <!-- ---------------------------- slider image ----------------------------- -->
+                  <div class="carousel-item active">
+                    <img
+                      src="./assets/images/8-850x550.jpg"
+                      class="d-block w-100"
+                      alt="property image"
+                    />
+                  </div>
+                  <!-- ---------------------------- slider image ----------------------------- -->
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/9-850x550.jpg"
+                      class="d-block w-100"
+                      alt="property image"
+                    />
+                  </div>
+                  <!-- ---------------------------- slider image ----------------------------- -->
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/12-1-850x550.jpg"
+                      class="d-block w-100"
+                      alt="property image"
+                    />
+                  </div>
+                  <!-- ---------------------------- slider image ----------------------------- -->
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/13-850x550.jpg"
+                      class="d-block w-100"
+                      alt="property image"
+                    />
+                  </div>
+                  <!-- ---------------------------- slider image ----------------------------- -->
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/14-850x550.jpg"
+                      class="d-block w-100"
+                      alt="property image"
+                    />
+                  </div>
                 </div>
-              </div>
 
-              <!-- --------------------- price , love , compare row ---------------------- -->
+                <!-- -------------------------- slider control buttons -------------------------- -->
+                <div
+                  class="card-overlay container overlay-lighter-dark-bg w-100 h-100 z-1 top-0 position-absolute"
+                >
+                  <div class="row">
+                    <!-- ----------------------------- prev button ----------------------------- -->
+                    <button
+                      class="carousel-control-prev"
+                      type="button"
+                      data-bs-target="#carouselExample"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
 
-              <div class="container">
-                <div class="row"></div>
+                    <!-- ----------------------------- next button ----------------------------- -->
+                    <button
+                      class="carousel-control-next"
+                      type="button"
+                      data-bs-target="#carouselExample"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- --------------------- price , love , compare row ---------------------- -->
+
+                <div class="container position-absolute bottom-0 z-1 w-100">
+                  <div
+                    class="row justify-content-start pb-2 gap-4 align-items-center"
+                  >
+                    <h3
+                      class="col-6 col-sm-6 col-lg-7 text-white fw-bold align-bottom align-items-center"
+                    >
+                      $1300<span class="fs-5">/mo</span>
+                    </h3>
+                    <div
+                      class="col-4 d-flex flex-row justify-content-end gap-2"
+                    >
+                      <i
+                        class="fa-solid fa-right-left fs-4 bg-opacity-50 p-2 text-white black-50-bg rounded primary-bg-hover"
+                      ></i>
+
+                      <i
+                        class="fa-regular fa-heart fs-4 bg-opacity-50 p-2 text-white black-50-bg rounded primary-bg-hover"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
             <!-- ----------------------------- card body ----------------------------- -->
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              <div class="card-title">
+                <p class="primary-color fw-semibold fs-5">Apartment</p>
+                <h4 class="gray-text-color fw-bold">Luxury Family Home</h4>
+              </div>
+              <div class="d-flex flex-row gap-1 align-items-center text-center">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="gray-text-color my-auto">
+                  1421 San Pedro St, Los Angeles, CA 900015
+                </p>
+              </div>
+
+              <div class="flex-row d-flex gap-5 mt-3 ps-1">
+                <p>Beds: 1</p>
+                <p>Bath: 1</p>
+                <p>SqFt: 8280</p>
+              </div>
+            </div>
+
+            <!-- ----------------------------- card footer ----------------------------- -->
+            <div class="card-footer bg-transparent">
+              <div class="row p-3 px-1">
+                <!-- ----------------------------- profile row ----------------------------- -->
+                <div class="d-flex flex-row col-8 gap-2">
+                  <div class="col-3 rounded-circle p-1">
+                    <img
+                      src="./assets/images/5.jpg"
+                      alt="profile"
+                      class="rounded-circle w-100"
+                    />
+                  </div>
+                  <div class="col-8 h-100 d-flex align-items-end pt-3">
+                    <p class="text-capitalize gray-text-color">ali tufan</p>
+                  </div>
+                </div>
+                <!-- --------------------------- posted time row --------------------------- -->
+                <div class="d-flex col-4 align-items-end justify-content-end">
+                  <p class="p-0">1 day ago</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------- find property in cities section ------------------- -->
+
+    <section id="homeFindPropertyInCities">
+      <div class="container-fluid py-5">
+        <!-- ----------------------------- header row ------------------------------ -->
+        <div class="row">
+          <h1 class="text-center fw-bold gray-text-color">
+            Find Property in Cities
+          </h1>
+          <p class="text-center gray-text-color">
+            Find the best property in your city
+          </p>
+        </div>
+
+        <!-- ----------------------------- cities row ------------------------------ -->
+        <div class="row justify-content-center gap-3 mb-4">
+          <!-- ----------------------------- city card ------------------------------ -->
+          <div
+            class="col-10 col-lg-3 col-md-3 col-sm-11 position-relative overflow-hidden p-0 rounded city-card"
+          >
+            <img
+              src="./assets/images/miami.jpg"
+              alt="miami"
+              class="w-100 h-100"
+            />
+            <div
+              class="position-absolute bottom-0 d-flex flex-column align-items-center justify-content-end h-100 gradient-overlay w-100"
+            >
+              <h3 class="text-capitalize text-white text-center">miami</h3>
+              <p class="text-capitalize text-white text-center">
+                24 properties
               </p>
             </div>
           </div>
-          <!-- ----------------------------- property card ------------------------------ -->
-          <div class="card col-lg-3 col-sm-5 col-10 pt-3">
-            <!-- -------------------------- image card slider -------------------------- -->
-            <div id="carouselExample" class="carousel slide position-relative">
-              <div class="carousel-inner">
-                <!-- ---------------------------- slider image ----------------------------- -->
+          <!-- ----------------------------- city card ------------------------------ -->
+          <div
+            class="col-10 col-lg-6 col-md-7 col-sm-11 position-relative overflow-hidden p-0 rounded city-card"
+          >
+            <img
+              src="./assets/images/los.jpg"
+              alt="miami"
+              class="w-100 h-100"
+            />
+            <div
+              class="position-absolute bottom-0 d-flex flex-column align-items-center justify-content-end h-100 gradient-overlay w-100"
+            >
+              <h3 class="text-capitalize text-white text-center">
+                los angeles
+              </h3>
+              <p class="text-capitalize text-white text-center">
+                18 properties
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ----------------------------- cities row ------------------------------ -->
+        <div class="row justify-content-center gap-3 mb-4">
+          <!-- ----------------------------- city card ------------------------------ -->
+          <div
+            class="col-10 col-lg-6 col-md-7 col-sm-11 position-relative overflow-hidden p-0 rounded city-card"
+          >
+            <img
+              src="./assets/images/newyork.jpg"
+              alt="miami"
+              class="w-100 h-100"
+            />
+            <div
+              class="position-absolute bottom-0 d-flex flex-column align-items-center justify-content-end h-100 gradient-overlay w-100"
+            >
+              <h3 class="text-capitalize text-white text-center">new york</h3>
+              <p class="text-capitalize text-white text-center">
+                89 properties
+              </p>
+            </div>
+          </div>
+          <!-- ----------------------------- city card ------------------------------ -->
+          <div
+            class="col-10 col-lg-3 col-md-3 col-sm-11 position-relative overflow-hidden p-0 rounded city-card"
+          >
+            <img
+              src="./assets/images/florida.jpg"
+              alt="miami"
+              class="w-100 h-100"
+            />
+            <div
+              class="position-absolute bottom-0 d-flex flex-column align-items-center justify-content-end h-100 gradient-overlay w-100"
+            >
+              <h3 class="text-capitalize text-white text-center">florida</h3>
+              <p class="text-capitalize text-white text-center">
+                47 properties
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------- why us section ---------------------------- -->
+    <section id="homeWhyUs" class="light-gray-bg">
+      <div class="container-fluid py-5">
+        <!-- ----------------------------- header row ------------------------------ -->
+        <div class="row mt-4">
+          <h1 class="text-center fw-bold gray-text-color text-capitalize">
+            why choose us
+          </h1>
+          <p class="text-center gray-text-color fs-5">
+            We provide full service at every step.
+          </p>
+        </div>
+
+        <!-- ----------------------------- why us row ------------------------------ -->
+        <div class="row justify-content-center gap-4 py-5">
+          <!-- -------------------------------- card --------------------------------- -->
+          <div
+            class="col-10 col-lg-3 col-sm-5 bg-white rounded d-flex flex-column justify-content-center align-items-center text-center p-5 gap-5"
+          >
+            <!-- ------------------------------ card top ------------------------------- -->
+            <div class="rounded-circle lighter-primary-bg p-5">
+              <i class="fa-solid fa-users fs-1 fw-bold primary-color"></i>
+            </div>
+            <!-- ------------------------------ card body ------------------------------- -->
+            <div>
+              <h4 class="fw-semibold gray-text-color">Trusted By Thousands</h4>
+              <p class="fw-semibold gray-text-color">
+                Aliquam dictum elit vitae mauris facilisis at dictum urna
+                dignissim donec vel lectus velis.
+              </p>
+            </div>
+          </div>
+          <!-- -------------------------------- card --------------------------------- -->
+          <div
+            class="col-10 col-lg-3 col-sm-5 bg-white rounded d-flex flex-column justify-content-center align-items-center text-center p-5 gap-5"
+          >
+            <!-- ------------------------------ card top ------------------------------- -->
+            <div class="rounded-circle lighter-primary-bg p-5">
+              <i
+                class="fa-solid fa-house-chimney fs-1 fw-bold primary-color"
+              ></i>
+            </div>
+            <!-- ------------------------------ card body ------------------------------- -->
+            <div>
+              <h4 class="fw-semibold gray-text-color">
+                Wide Renge Of Properties
+              </h4>
+              <p class="fw-semibold gray-text-color">
+                Aliquam dictum elit vitae mauris facilisis at dictum urna
+                dignissim donec vel lectus velis.
+              </p>
+            </div>
+          </div>
+          <!-- -------------------------------- card --------------------------------- -->
+          <div
+            class="col-10 col-lg-3 col-sm-5 bg-white rounded d-flex flex-column justify-content-center align-items-center text-center p-5 gap-5"
+          >
+            <!-- ------------------------------ card top ------------------------------- -->
+            <div class="rounded-circle lighter-primary-bg p-5">
+              <i
+                class="fa-solid fa-hand-holding-dollar fs-1 fw-bold primary-color"
+              ></i>
+            </div>
+            <!-- ------------------------------ card body ------------------------------- -->
+            <div>
+              <h4 class="fw-semibold gray-text-color">Financing Made Easy</h4>
+              <p class="fw-semibold gray-text-color">
+                Aliquam dictum elit vitae mauris facilisis at dictum urna
+                dignissim donec vel lectus velis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------- Articles & Tips Section ----------------------- -->
+    <section id="homeArticls" class="light-gray-bg">
+      <div class="container-fluid py-5">
+        <!-- ------------------------------ heder row ------------------------------ -->
+        <div class="row text-center gray-text-color pt-5 mb-5">
+          <h1 class="fw-bold">Articles & Tips</h1>
+          <p class="fw-semibold fs-6">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+
+        <!-- ----------------------------- Articles row ----------------------------- -->
+        <div class="row justify-content-center gap-4 mx-auto mb-5">
+          <!-- ----------------------------- Article card ------------------------------ -->
+          <div
+            class="card col-lg-3 col-sm-5 col-10 pt-2 p-0 gray-border border-0"
+          >
+            <!-- -------------------------- image card -------------------------- -->
+            <div class="px-2">
+              <div class="slide position-relative overflow-hidden rounded-3">
                 <div class="carousel-item active">
                   <img
-                    src="./assets/images/8-850x550.jpg"
+                    src="./assets/images/house-isolated-field-1.webp"
                     class="d-block w-100"
-                    alt="proparty image"
+                    alt="property image"
                   />
                 </div>
-                <!-- ---------------------------- slider image ----------------------------- -->
-                <div class="carousel-item">
-                  <img
-                    src="./assets/images/9-850x550.jpg"
-                    class="d-block w-100"
-                    alt="proparty image"
-                  />
-                </div>
-                <!-- ---------------------------- slider image ----------------------------- -->
-                <div class="carousel-item">
-                  <img
-                    src="./assets/images/12-1-850x550.jpg"
-                    class="d-block w-100"
-                    alt="proparty image"
-                  />
-                </div>
-                <!-- ---------------------------- slider image ----------------------------- -->
-                <div class="carousel-item">
-                  <img
-                    src="./assets/images/13-850x550.jpg"
-                    class="d-block w-100"
-                    alt="proparty image"
-                  />
-                </div>
-                <!-- ---------------------------- slider image ----------------------------- -->
-                <div class="carousel-item">
-                  <img
-                    src="./assets/images/14-850x550.jpg"
-                    class="d-block w-100"
-                    alt="proparty image"
-                  />
-                </div>
-              </div>
-
-              <!-- -------------------------- slider control buttons -------------------------- -->
-              <div
-                class="card-overlay container overlay-lighter-dark-bg w-100 h-100 z-1 top-0 position-absolute"
-              >
-                <div class="row">
-                  <!-- ----------------------------- prev button ----------------------------- -->
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExample"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-
-                  <!-- ----------------------------- next button ----------------------------- -->
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExample"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              </div>
-
-              <!-- --------------------- price , love , compare row ---------------------- -->
-
-              <div class="container">
-                <div class="row"></div>
               </div>
             </div>
 
             <!-- ----------------------------- card body ----------------------------- -->
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
+              <div class="card-title">
+                <p class="primary-color fw-semibold fs-5 text-capitalize">
+                  Business
+                </p>
+                <h4
+                  class="gray-text-color fw-bold text-capitalize primary-color-hover"
+                >
+                  Skills That You Can Learn In The Real Estate Market
+                </h4>
+              </div>
             </div>
+
+            <!-- ----------------------------- card footer ----------------------------- -->
+            <div class="card-footer bg-transparent">
+              <div class="row p-3 px-1">
+                <!-- ----------------------------- profile row ----------------------------- -->
+                <div class="d-flex flex-row col-8 gap-2">
+                  <div class="col-3 rounded-circle p-1">
+                    <img
+                      src="./assets/images/5.jpg"
+                      alt="profile"
+                      class="rounded-circle w-100"
+                    />
+                  </div>
+                  <div class="col-8 h-100 d-flex align-items-end pt-3">
+                    <p class="text-capitalize gray-text-color">ali tufan</p>
+                  </div>
+                </div>
+                <!-- --------------------------- posted time row --------------------------- -->
+                <div class="d-flex col-4 align-items-end justify-content-end">
+                  <p class="p-0">7 August 2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ----------------------------- Article card ------------------------------ -->
+          <div
+            class="card col-lg-3 col-sm-5 col-10 pt-2 p-0 gray-border border-0"
+          >
+            <!-- -------------------------- image card -------------------------- -->
+            <div class="px-2">
+              <div class="slide position-relative overflow-hidden rounded-3">
+                <div class="carousel-item active">
+                  <img
+                    src="./assets/images/9-characteristics-4.jpg"
+                    class="d-block w-100"
+                    alt="property image"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- ----------------------------- card body ----------------------------- -->
+            <div class="card-body">
+              <div class="card-title">
+                <p class="primary-color fw-semibold fs-5 text-capitalize">
+                  Construction
+                </p>
+                <h4
+                  class="gray-text-color fw-bold text-capitalize primary-color-hover"
+                >
+                  Bedroom Colors You will Never this Regret
+                </h4>
+              </div>
+            </div>
+
+            <!-- ----------------------------- card footer ----------------------------- -->
+            <div class="card-footer bg-transparent">
+              <div class="row p-3 px-1">
+                <!-- ----------------------------- profile row ----------------------------- -->
+                <div class="d-flex flex-row col-8 gap-2">
+                  <div class="col-3 rounded-circle p-1">
+                    <img
+                      src="./assets/images/5.jpg"
+                      alt="profile"
+                      class="rounded-circle w-100"
+                    />
+                  </div>
+                  <div class="col-8 h-100 d-flex align-items-end pt-3">
+                    <p class="text-capitalize gray-text-color">ali tufan</p>
+                  </div>
+                </div>
+                <!-- --------------------------- posted time row --------------------------- -->
+                <div class="d-flex col-4 align-items-end justify-content-end">
+                  <p class="p-0">7 August 2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ----------------------------- Article card ------------------------------ -->
+          <div
+            class="card col-lg-3 col-sm-5 col-10 pt-2 p-0 gray-border border-0"
+          >
+            <!-- -------------------------- image card -------------------------- -->
+            <div class="px-2">
+              <div class="slide position-relative overflow-hidden rounded-3">
+                <div class="carousel-item active">
+                  <img
+                    src="./assets/images/blog2-op5h9ukqohpvlj56kvz57kxf15eqhdeymxa36hjeck.jpg"
+                    class="d-block w-100"
+                    alt="property image"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- ----------------------------- card body ----------------------------- -->
+            <div class="card-body">
+              <div class="card-title">
+                <p class="primary-color fw-semibold fs-5 text-capitalize">
+                  Business
+                </p>
+                <h4
+                  class="gray-text-color fw-bold text-capitalize primary-color-hover"
+                >
+                  5 Essential Steps for Buying everyone Investment
+                </h4>
+              </div>
+            </div>
+
+            <!-- ----------------------------- card footer ----------------------------- -->
+            <div class="card-footer bg-transparent">
+              <div class="row p-3 px-1">
+                <!-- ----------------------------- profile row ----------------------------- -->
+                <div class="d-flex flex-row col-8 gap-2">
+                  <div class="col-3 rounded-circle p-1">
+                    <img
+                      src="./assets/images/5.jpg"
+                      alt="profile"
+                      class="rounded-circle w-100"
+                    />
+                  </div>
+                  <div class="col-8 h-100 d-flex align-items-end pt-3">
+                    <p class="text-capitalize gray-text-color">ali tufan</p>
+                  </div>
+                </div>
+                <!-- --------------------------- posted time row --------------------------- -->
+                <div class="d-flex col-4 align-items-end justify-content-end">
+                  <p class="p-0">7 August 2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------ Our Partners Section ------------------------- -->
+
+    <section id="homeOurPartners">
+      <div class="container py-5">
+        <!-- ----------------------------- header row ------------------------------ -->
+        <div class="row mb-5">
+          <h1 class="text-center fw-bold gray-text-color pt-5">Our Partners</h1>
+          <p class="text-center gray-text-color fs-5 fw-semibold">
+            We only work with the best companies around the globe
+          </p>
+        </div>
+
+        <!-- ----------------------------- partners row ----------------------------- -->
+        <div class="row justify-content-center gap-5 mb-5">
+          <!-- ----------------------------- partner card ----------------------------- -->
+          <div
+            class="col-5 col-sm-4 col-md-3 col-lg-2 jus d-flex justify-content-center"
+          >
+            <img
+              src="./assets/images/brand01.png"
+              alt="brand01"
+              class="img-fluid"
+            />
+          </div>
+          <!-- ----------------------------- partner card ----------------------------- -->
+          <div
+            class="col-5 col-sm-4 col-md-3 col-lg-2 jus d-flex justify-content-center"
+          >
+            <img
+              src="./assets/images/brand03.png"
+              alt="brand03"
+              class="img-fluid"
+            />
+          </div>
+          <!-- ----------------------------- partner card ----------------------------- -->
+          <div
+            class="col-5 col-sm-4 col-md-3 col-lg-2 jus d-flex justify-content-center"
+          >
+            <img
+              src="./assets/images/brand04.png"
+              alt="brand04"
+              class="img-fluid"
+            />
+          </div>
+          <!-- ----------------------------- partner card ----------------------------- -->
+          <div
+            class="col-5 col-sm-4 col-md-3 col-lg-2 jus d-flex justify-content-center"
+          >
+            <img
+              src="./assets/images/brand05.png"
+              alt="brand05"
+              class="img-fluid"
+            />
+          </div>
+
+          <!-- ----------------------------- partner card ----------------------------- -->
+          <div
+            class="col-5 col-sm-4 col-md-3 col-lg-2 jus d-flex justify-content-center"
+          >
+            <img
+              src="./assets/images/brand06.png"
+              alt="brand06"
+              class="img-fluid"
+            />
           </div>
         </div>
       </div>

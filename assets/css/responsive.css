@@ -5,10 +5,18 @@
     top: 0%;
     background-color: white !important;
   }
+  #homeFindPropertyInCities {
+    .city-card {
+      height: 200px !important;
+    }
+  }
+  
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+  
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -24,6 +32,13 @@
   .home-navbar ul li a {
     color: white !important;
   }
+
+  #homeFindPropertyInCities {
+    .city-card {
+      height: 300px !important;
+    }
+  }
+
 }
 
 /* X-Large devices (large desktops, 1200px and up) */

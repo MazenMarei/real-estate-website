@@ -42,4 +42,44 @@ $(document).ready(() => {
       event.target.reset();
     }
   });
+
+  /* ------------------------- smooth scrolling effect ------------------------ */
+  const scrollBtn = $("#scrollUpBtn");
+  $(document).on("scroll", () => {
+    // console.log(window.scrollY + document.documentElement.clientHeight);
+    // console.log(document.documentElement.scrollHeight);
+
+    if (
+      window.scrollY + document.documentElement.clientHeight >=
+      document.documentElement.scrollHeight / 4
+    ) {
+      scrollBtn.removeClass("d-none");
+      scrollBtn.addClass("slide-and-fade-in");
+    } else {
+      if (scrollBtn.hasClass("d-none")) return;
+      scrollBtn.addClass("slide-and-fade-out");
+      setTimeout(() => {
+        scrollBtn.addClass("d-none");
+        scrollBtn.removeClass("slide-and-fade-out");
+        scrollBtn.removeClass("slide-and-fade-in");
+      }, 300);
+    }
+  });
+
+  /* ------------------------- smooth scrolling effect ------------------------ */
+  $("#scrollUpBtn").click(() => {
+    $("html, body").animate(
+      { scrollTop: 0 },
+      {
+        duration:
+          (window.scrollY / 100).toFixed(0) -
+          (window.scrollY / 100).toFixed(0) * 0.1,
+        specialEasing: {
+          scrollTop: "linear",
+        },
+      }
+    );
+  });
+
+  
 });
