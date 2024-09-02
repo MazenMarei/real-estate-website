@@ -49,7 +49,7 @@
 
 /* Featured Properties cards overlay effect */
 
-#homeFeaturedProperties {
+#homeFeaturedProperties  {
   .card-overlay {
     transition: all 0.5s;
     overflow: hidden;
@@ -81,8 +81,9 @@
   .card:hover {
     box-shadow: 0 0 10px var(--overlay-lighter-dark);
   }
-}
 
+
+}
 /* start homeFindPropertyInCities section */
 
 #homeFindPropertyInCities {
@@ -114,4 +115,11 @@
   z-index: -1;
   animation: loading 2.5s linear infinite;
 }
+}
+
+#homeWhyUs {
+  .why-us-row {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 380px));
+  }
 }

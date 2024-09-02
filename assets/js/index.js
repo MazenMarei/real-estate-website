@@ -82,23 +82,62 @@ $(document).ready(() => {
   });
 
   /* -------------------------- auto play modal video ------------------------- */
-
-  document
-    .getElementById("videoModal")
-    .addEventListener("shown.bs.modal", () => {
+  const videoModal = document.getElementById("videoModal");
+  if (videoModal) {
+    videoModal.addEventListener("shown.bs.modal", () => {
       $("#aboutUsVideo").attr(
         "src",
         $("#aboutUsVideo").attr("src") + "&autoplay=1"
       );
     });
 
-  /* -------------------- close video after modal is closed ------------------- */
-  document
-    .getElementById("videoModal")
-    .addEventListener("hidden.bs.modal", () => {
+    /* -------------------- close video after modal is closed ------------------- */
+
+    videoModal.addEventListener("hidden.bs.modal", () => {
       $("#aboutUsVideo").attr(
         "src",
         $("#aboutUsVideo").attr("src").replace("&autoplay=1", "")
       );
     });
+  }
+
+  /* ------------------------ properties cards carousel ----------------------- */
+  $(".card-carousel").owlCarousel({
+    loop: false,
+    margin: 25,
+    nav: false,
+    rewind: true,
+    autoplay : true,  
+    autoplayHoverPause: true,
+    mouseDrag: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      768: {
+        items: 2,
+      },
+      992: {
+        items: 3,
+      },
+    },
+  });
+
+  /* -------------------------- owl partners carousel ------------------------- */
+  $(".owl-lol").owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      768: {
+        items: 3,
+      },
+      992: {
+        items: 5,
+      },
+    },
+  });
 });
