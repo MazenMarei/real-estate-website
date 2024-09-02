@@ -36,6 +36,11 @@
 
   scroll-behavior: smooth;
 }
+
+::selection {
+  background: var(--secondary);
+  color: white;
+}
 /* start of the home page */
 
 /* home page image title responsive */
@@ -46,7 +51,6 @@
 }
 
 /* Featured Properties cards overlay effect */
-
 #homeFeaturedProperties {
   .card-overlay {
     transition: all 0.5s;
@@ -85,6 +89,14 @@
 #homeFindPropertyInCities {
   .city-card {
     height: 200px !important;
+  }
+  .city-card img {
+    transition: all 0.5s;
+  }
+  .city-card:hover > img {
+    transform: scale(1.08) rotate(1deg);
+    filter: contrast(1.5);
+    transition: all 0.5s;
   }
 }
 
