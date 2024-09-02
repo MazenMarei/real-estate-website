@@ -107,7 +107,7 @@ $(document).ready(() => {
     margin: 25,
     nav: false,
     rewind: true,
-    autoplay : true,  
+    autoplay: true,
     autoplayHoverPause: true,
     mouseDrag: false,
     responsive: {
@@ -140,4 +140,5 @@ $(document).ready(() => {
       },
     },
   });
+
 });

@@ -160,3 +160,9 @@
 .slide-and-fade-out {
   animation: slideAndFadeout 0.3s linear;
 }
+
+
+.slide-up-and-fade-in {
+  animation: slideUpAndFadeIn .85s linear;
+}
+
