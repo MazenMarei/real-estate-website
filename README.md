@@ -45,7 +45,7 @@ To run this project locally, follow these steps:
 - **Contact Form**: Fill out the form to contact the real estate agency.
 
 ## Screenshots
-![Home Page](chrome-extension://fdpohaocaechififmbbbbbknoalclacl/capture.html?id=2&url=http%3A%2F%2F127.0.0.1%3A5500%2Findex.html)
+![Home Page](https://cdn.discordapp.com/attachments/1278084963107082310/1280188841160085545/screencapture-127-0-0-1-5500-index-html-2024-09-02-18_31_27.png?ex=66d72c44&is=66d5dac4&hm=940fd13f8aaf791b6c7bec5b133751665a229b6d129b5ba3ad080a68c6fe9572&)
 
 ## Contributing
 If you would like to contribute to this project, please follow these steps:
