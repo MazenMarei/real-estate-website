@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- --------------------- meta tags --------------------- -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- -------------------- importing bootstrap css file --------------------- -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- ------------------- importing fontsawesome css file ------------------- -->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- ------------------- importing custom css file ------------------- -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- ------------------ importing custom layout css file ------------------- -->
+    <link rel="stylesheet" href="../css/custome-layout.css" />
+    <!-- --------------------- importing animate css file ---------------------- -->
+    <link rel="stylesheet" href="../css/animation.css" />
+    <!-- -------------------- importing responsive css file -------------------- -->
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <!-- --------------------------- website favicon --------------------------- -->
+    <link rel="icon" href="../images/logo.png" />
+    <!-- ---------------------------- website title ---------------------------- -->
+    <title>Real Estate</title>
+  </head>
+  <body>
+    <!-- ------------------------ navbar (don't touch) ------------------------ -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark z-3 w-100 top-0 position-sticky p-3 px-5 position-sticky top-0 bg-white shadow"
+      id="navbar"
+    >
+      <!-- ---------------------------- navbar brand ----------------------------- -->
+      <a class="navbar-brand align-middle" href="../../index.html">
+        <img src="../images/logo.png" alt="logo" />
+        <span class="align-bottom fs-4 fw-bold gray-text-color">
+          FindHouse
+        </span>
+      </a>
+
+      <!-- ------------------- navbar toggler button -------------------- -->
+      <button
+        class="navbar-toggler primary-bg primary-outline-focus"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        id="navbarToggler"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- ------------------- navbar links -------------------- -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ml-auto text-capitalize fs-5">
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="../../index.html"
+              >home</a
+            >
+          </li>
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="#featuredProperties"
+              >property</a
+            >
+          </li>
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="#about"
+              >services</a
+            >
+          </li>
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="#contact"
+              >blog</a
+            >
+          </li>
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="#contact"
+              >about us</a
+            >
+          </li>
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="#contact"
+              >contact us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ------------- toast notification container (don't touch) ------------- -->
+    <div
+      aria-live="polite"
+      aria-atomic="true"
+      class="position-sticky top-0 end-0 z-3"
+    >
+      <div class="toast-container top-0 end-0 p-3 z-3 overflow-hidden">
+        <!-- ------------------------ subscribe email toast ------------------------ -->
+        <div
+          class="toast top-0 end-0 toast-loading"
+          data-bs-delay="4550"
+          role="alert"
+          id="my-toast"
+          aria-live="assertive"
+          aria-atomic="true"
+          data-autohide="false"
+        >
+          <div class="toast-header">
+            <div class="d-flex flex-row align-items-center gap-4">
+              <div>
+                <i class="fa-solid fa-circle-check text-success fs-3"></i>
+              </div>
+              <div>
+                <strong class="me-auto">Subscribed Successfully!!</strong>
+              </div>
+              <div class="ms-5">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="toast"
+                  aria-label="Close"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------- scroll up button (don't touch) -------------------- -->
+    <button
+      class="btn secondary-bg rounded-circle scroll-up-btn position-fixed z-3 bottom-0 end-0 me-3 mb-3 d-none"
+      id="scrollUpBtn"
+    >
+      <i class="fa-solid fa-arrow-up primary-color fs-3"></i>
+    </button>
+
+    <!-- ----------------------------- main image section ----------------------------- -->
+
+    <section id="aboutUsMainImage">
+      <div
+        class="container-fluid p-0 position-relative w-100 justify-content-center"
+      >
+        <div class="position-relative overflow-hidden h-100 overflow-hidden">
+          <img
+            src="../images/bg-breadcrumb-min.jpg"
+            alt="about us main image"
+            class="img-fluid w-100"
+          />
+        </div>
+        <div class="overlay-dark-bg h-100 w-100 position-absolute top-0"></div>
+        <div
+          class="position-absolute top-50 translate-middle start-50 container"
+        >
+          <div class="row">
+            <div class="d-flex flex-row align-items-center gap-1 mb-3">
+              <a
+                href="../../index.html"
+                class="text-decoration-none primary-color text-capitalize fw-semibold"
+                >home</a
+              >
+              <i class="fa-solid fa-angle-right text-white"></i>
+              <p
+                href="#"
+                class="text-decoration-none text-white text-capitalize fw-semibold m-0"
+              >
+                about us
+              </p>
+            </div>
+            <h1 class="text-white fw-bold fs-1">About Us</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------- about us section ----------------------------- -->
+    <section id="aboutUs">
+      <div class="container pt-5 p-0">
+        <div class="row pt-5 p-0 w-100 mx-auto">
+          <div class="col-lg-7 col-12 d-flex flex-column gap-4 py-5 p-0 ps-2">
+            <p class="gray-text-color fs-5 fw-bold">
+              Maurice ac consectetur ante, dapibus gravida tellus. Nollam
+              aliquet eleifend dapibus. Crass sagitis, ex euismod lacinia
+              tempor.
+            </p>
+            <p class="gray-text-color fs-6 lh-lg">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Why does
+              this ligula eu lectus vulputate porttitor sed feugiat nunc.
+              Maurice ac consectetur ante, dapibus gravida tellus. Nollam
+              aliquet eleifend dapibus. Crassus vulgaris, ex euismod lacinia
+              tempor, lectus orci elementum augue, get auctor metus ante sit
+              amet velit.
+            </p>
+            <p class="gray-text-color fs-6 lh-lg">
+              What happens now, and is legally binding. Name congue augue and ex
+              congue, sed luctus lectus congue. Integer convallis condimentum
+              sem. Duis elementum tortor eget condimentum tempor. Prayersent
+              solicitudin lectus ut pulvinar pharetra. Donec and libero ligula.
+              Vivamus semper at orci at placerat.Placeat Lorem ipsum dolor sit
+              amet, consectetur adipisicing elit. Quoted libero amet, laborum
+              qui nulla quae alias tempora.
+            </p>
+          </div>
+          <div class="col-lg-5 col-12 py-5 position-relative">
+            <img
+              src="../images/bg-video.jpg"
+              alt="about us"
+              class="img-fluid w-100"
+            />
+            <div
+              class="position-absolute top-50 start-50 translate-middle popup-video"
+            >
+              <button
+                class="btn primary-bg rounded-circle d-flex flex-row justify-content-center align-items-center w-100 h-100"
+                data-bs-toggle="modal"
+                data-bs-target="#videoModal"
+              >
+                <i class="fa-solid fa-play text-white fs-1 ps-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="videoModal"
+          tabindex="-1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+              <div
+                class="modal-header bg-transparent border-0 p-0 justify-content-end"
+              >
+                <button
+                  type="button"
+                  class="btn text-white fs-3"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+              <div class="modal-body bg-transparent p-0">
+                <iframe
+                  width="100%"
+                  height="500"
+                  src="https://www.youtube.com/embed/aQlkVB9LZPk?si=HqzsfrYD8IjkEPo_"
+                  id="aboutUsVideo"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------------ Our Partners Section ------------------------- -->
+    <section id="aboutUsOurPartners">
+      <div class="container py-5">
+        <!-- ----------------------------- header row ------------------------------ -->
+        <div class="row mb-5">
+          <h1 class="text-center fw-bold gray-text-color pt-5">Our Partners</h1>
+          <p class="text-center gray-text-color fs-5 fw-semibold">
+            We only work with the best companies around the globe
+          </p>
+        </div>
+
+        <!-- ----------------------------- partners row ----------------------------- -->
+        <div class="row justify-content-center gap-5 mb-5">
+          <!-- ----------------------------- partner card ----------------------------- -->
+          <div
+            class="col-5 col-sm-4 col-md-3 col-lg-2 jus d-flex justify-content-center"
+          >
+            <img src="../images/brand01.png" alt="brand01" class="img-fluid" />
+          </div>
+          <!-- ----------------------------- partner card ----------------------------- -->
+          <div
+            class="col-5 col-sm-4 col-md-3 col-lg-2 jus d-flex justify-content-center"
+          >
+            <img src="../images/brand03.png" alt="brand03" class="img-fluid" />
+          </div>
+          <!-- ----------------------------- partner card ----------------------------- -->
+          <div
+            class="col-5 col-sm-4 col-md-3 col-lg-2 jus d-flex justify-content-center"
+          >
+            <img src="../images/brand04.png" alt="brand04" class="img-fluid" />
+          </div>
+          <!-- ----------------------------- partner card ----------------------------- -->
+          <div
+            class="col-5 col-sm-4 col-md-3 col-lg-2 jus d-flex justify-content-center"
+          >
+            <img src="../images/brand05.png" alt="brand05" class="img-fluid" />
+          </div>
+
+          <!-- ----------------------------- partner card ----------------------------- -->
+          <div
+            class="col-5 col-sm-4 col-md-3 col-lg-2 jus d-flex justify-content-center"
+          >
+            <img src="../images/brand06.png" alt="brand06" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------- footer section (don't remove) -------------------- -->
+    <footer>
+      <!-- ----------------------------- top footer ------------------------------ -->
+      <div class="w-100 secondary-bg justify-content-center p-5">
+        <div class="container pt-5">
+          <div class="row pt-3">
+            <!-- ----------------------------- about site ----------------------------- -->
+            <div class="col-lg-3 col-sm-6 col-12">
+              <h4 class="text-capitalize text-white fw-bold mb-4">
+                about site
+              </h4>
+              <p class="light-gray-text-color fs-6 fw-semibold">
+                We're reimagining how you buy, sell and rent. It's now easier to
+                get into a place you love. So let's do this, together.
+              </p>
+            </div>
+
+            <!-- ----------------------------- Quick Links ----------------------------- -->
+            <div class="col-lg-3 col-sm-6 col-12">
+              <h4 class="text-capitalize text-white fw-bold mb-4">
+                Quick Links
+              </h4>
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >about us</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >terms & conditions</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >user's guide</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >support center</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >press info</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- ----------------------------- contaact us ----------------------------- -->
+            <div class="col-lg-3 col-sm-6 col-12">
+              <h4 class="text-capitalize text-white fw-bold mb-4">
+                contaact us
+              </h4>
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <a
+                    href="mailto:info@findhouse.com"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >info@findhouse.com</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >Collins Street West, Victoria</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >8007, Australia.</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="tel:+1 246-345-0699"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >+1 246-345-0699</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="tel:+1 246-345-0695"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >+1 246-345-0695</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- ----------------------------- social media ----------------------------- -->
+            <div class="col-lg-3 col-sm-6 col-12">
+              <h4 class="text-capitalize text-white fw-bold mb-4">follow us</h4>
+              <ul class="list-unstyled flex-row d-flex gap-4">
+                <li class="mb-3">
+                  <a
+                    href="mailto:info@findhouse.com"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                  >
+                    <i class="fs-5 fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    ><i class="fs-5 fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    ><i class="fs-5 fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="tel:+1 246-345-0699"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    ><i class="fs-5 fa-brands fa-pinterest"></i
+                  ></a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="tel:+1 246-345-0695"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    ><i class="fs-5 fa-solid fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+
+              <!-- ----------------------------- subscribe ----------------------------- -->
+              <h4 class="text-capitalize text-white fw-bold mb-4">Subscribe</h4>
+              <form
+                id="subscribeForm"
+                class="needs-validation d-flex f-row gap-3"
+                novalidate
+              >
+                <div class="position-relative">
+                  <input
+                    type="email"
+                    id="subscribeEmail"
+                    class="form-control rounded-pill"
+                    aria-describedby="validationServerEmailSubcribe"
+                    required
+                    placeholder="Enter your email"
+                  />
+                  <div
+                    id="validationServerEmailSubcribe"
+                    class="invalid-feedback position-absolute"
+                  >
+                    Please Enter Your Email.
+                  </div>
+                </div>
+                <button
+                  class="btn primary-bg text-white rounded-circle"
+                  type="submit"
+                  data-bs-target="#my-toast"
+                >
+                  <i class="fa-solid fa-angle-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------------------------- bottom footer ------------------------------ -->
+      <div class="w-100 dark-secondary-bg p-5">
+        <div class="container">
+          <div class="row">
+            <div
+              class="d-flex flex-md-row flex-sm-column flex-column justify-content-between row-gap-5"
+            >
+              <div class="d-flex">
+                <ul
+                  class="list-unstyled d-flex flex-md-row flex-sm-column flex-column gap-4 my-auto"
+                >
+                  <li>
+                    <a
+                      href="../../index.html"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >listing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >proparty</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >about us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >blog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p class="light-gray-text-color fs-5">
+                  © 2024 by compny. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- -------------------------- importing jquery --------------------------- -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <!-- --------------------- importing bootstrap js file --------------------- -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- ------------------- importing fontsawesome js file ------------------- -->
+    <script src="../js/all.min.js"></script>
+    <!-- ---------------------- importing custom js file ----------------------- -->
+    <script src="../js/index.js"></script>
+  </body>
+</html>

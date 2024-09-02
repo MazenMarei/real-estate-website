@@ -1,0 +1,50 @@
+@keyframes toastAnimation {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes toastLoading {
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes slideAndFadeIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes slideAndFadeout {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+
+@keyframes loading {
+  0% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+  50% {
+    transform: scale(1.4) translate(-35%, -35%);
+  }
+  100% {
+    transform: scale(1) translate(-50%, -50%);
+  }
+}

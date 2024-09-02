@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- --------------------- meta tags --------------------- -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- -------------------- importing bootstrap css file --------------------- -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- ------------------- importing fontsawesome css file ------------------- -->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- ------------------- importing custom css file ------------------- -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- ------------------ importing custom layout css file ------------------- -->
+    <link rel="stylesheet" href="../css/custome-layout.css" />
+    <!-- --------------------- importing animate css file ---------------------- -->
+    <link rel="stylesheet" href="../css/animation.css" />
+    <!-- -------------------- importing responsive css file -------------------- -->
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <!-- --------------------------- website favicon --------------------------- -->
+    <link rel="icon" href="../images/logo.png" />
+    <!-- ---------------------------- website title ---------------------------- -->
+    <title>Real Estate</title>
+  </head>
+  <body>
+    <!-- ------------------------ navbar (don't touch) ------------------------ -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark z-3 w-100 top-0 position-sticky p-3 px-5 position-sticky top-0 bg-white shadow"
+      id="navbar"
+    >
+      <!-- ---------------------------- navbar brand ----------------------------- -->
+      <a class="navbar-brand align-middle" href="../../index.html">
+        <img src="../images/logo.png" alt="logo" />
+        <span class="align-bottom fs-4 fw-bold gray-text-color">
+          FindHouse
+        </span>
+      </a>
+
+      <!-- ------------------- navbar toggler button -------------------- -->
+      <button
+        class="navbar-toggler primary-bg primary-outline-focus"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        id="navbarToggler"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- ------------------- navbar links -------------------- -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ml-auto text-capitalize fs-5">
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="../../index.html"
+              >home</a
+            >
+          </li>
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="#featuredProperties"
+              >property</a
+            >
+          </li>
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="#about"
+              >services</a
+            >
+          </li>
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="#contact"
+              >blog</a
+            >
+          </li>
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="#contact"
+              >about us</a
+            >
+          </li>
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="#contact"
+              >contact us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ------------- toast notification container (don't touch) ------------- -->
+    <div
+      aria-live="polite"
+      aria-atomic="true"
+      class="position-sticky top-0 end-0 z-3"
+    >
+      <div class="toast-container top-0 end-0 p-3 z-3 overflow-hidden">
+        <!-- ------------------------ subscribe email toast ------------------------ -->
+        <div
+          class="toast top-0 end-0 toast-loading"
+          data-bs-delay="4550"
+          role="alert"
+          id="my-toast"
+          aria-live="assertive"
+          aria-atomic="true"
+          data-autohide="false"
+        >
+          <div class="toast-header">
+            <div class="d-flex flex-row align-items-center gap-4">
+              <div>
+                <i class="fa-solid fa-circle-check text-success fs-3"></i>
+              </div>
+              <div>
+                <strong class="me-auto">Subscribed Successfully!!</strong>
+              </div>
+              <div class="ms-5">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="toast"
+                  aria-label="Close"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------- scroll up button --------------------------- -->
+    <button
+      class="btn secondary-bg rounded-circle scroll-up-btn position-fixed z-3 bottom-0 end-0 me-3 mb-3 d-none"
+      id="scrollUpBtn"
+    >
+      <i class="fa-solid fa-arrow-up primary-color fs-3"></i>
+    </button>
+
+    <!-- ----------------------------- main section ----------------------------- -->
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-3">
+                <!-- Search Filters -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Filters</h5>
+                        <form>
+                            <div class="form-group mb-2">
+                                <input type="text" class="form-control" placeholder="Keyword">
+                            </div>
+                            <div class="form-group mb-2">
+                                <input type="text" class="form-control" placeholder="Location">
+                            </div>
+                            <div class="form-group mb-2">
+                                <input type="text" class="form-control" placeholder="Status">
+                            </div>
+                            <div class="form-group mb-2">
+                                <input type="text" class="form-control" placeholder="Property Type">
+                            </div>
+                            <div class="form-group mb-2">
+                                <input type="text" class="form-control" placeholder="Price Range">
+                            </div>
+                            <div class="form-group mb-2">
+                                <input type="text" class="form-control" placeholder="Bathrooms">
+                            </div>
+                            <div class="form-group mb-2">
+                                <input type="text" class="form-control" placeholder="Grades">
+                            </div>
+                            <div class="form-group mb-2">
+                                <input type="text" class="form-control" placeholder="Year built">
+                            </div>
+                            <div class="form-group mb-2 col-lg-6">
+                                <input type="text" class="form-control" placeholder="Min Area">
+                            </div>
+                            <div class="form-group mb-2 col-lg-6">
+                                <input type="text" class="form-control" placeholder="Max Area">
+                            </div>
+                            <!-- Add more filter fields as needed -->
+                            <button type="submit" class="btn btn-danger btn-block">Clear Filters</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Featured Properties -->
+                <div class="card mb-4">
+                    <div class="card-body mb-4">
+                        <h5 class="card-title">Featured Properties</h5>
+                        <img src="../images/8-850x550.jpg" class="card-img-top" alt="Property Image">
+                        <!-- Featured properties list -->
+                    </div>
+                </div>
+
+                <!-- Categories -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Categories</h5>
+                        <!-- Categories list -->
+                    </div>
+                </div>
+                <!-- Categories -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Recently Viewed</h5>
+                        <!-- Categories list -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Property Listing -->
+            <div class="col-lg-9">
+                <h4>Get all Properties</h4>
+                <p>10 Search results</p>
+
+                <div class="row">
+                    <!-- Property Card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <img src="../images/8-850x550.jpg" class="card-img-top" alt="Property Image">
+                            <div class="card-body">
+                                <h5 class="card-title">$13,000/mo</h5>
+                                <p class="card-text">Luxury Family Home</p>
+                                <p class="card-text"><small>Apartment</small></p>
+                                <p class="card-text"><i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los Angeles, CA 90015</p>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="profile d-flex align-items-center">
+                                        <img src="../images/5.jpg" alt="User Image" class="rounded-circle" style="width: 30px;">
+                                        <small class="ml-2">Ali Tufan</small>
+                                    </div>
+                                    <small class="text-muted">1 year ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <img src="../images/5-850x550.jpg" class="card-img-top" alt="Property Image">
+                            <div class="card-body ">
+                                <h5 class="card-title">$13,000/mo</h5>
+                                <p class="card-text">Luxury Family Home</p>
+                                <p class="card-text"><small>Apartment</small></p>
+                                <p class="card-text"><i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los Angeles, CA 90015</p>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="profile d-flex align-items-center">
+                                        <img src="../images/6.jpg" alt="User Image" class="rounded-circle" style="width: 30px;">
+                                        <small class="ml-2">Ali Tufan</small>
+                                    </div>
+                                    <small class="text-muted">1 year ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <img src="../images/11-850x550.jpg" class="card-img-top" alt="Property Image">
+                            <div class="card-body">
+                                <h5 class="card-title">$13,000/mo</h5>
+                                <p class="card-text">Luxury Family Home</p>
+                                <p class="card-text"><small>Apartment</small></p>
+                                <p class="card-text"><i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los Angeles, CA 90015</p>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="profile d-flex align-items-center">
+                                        <img src="../images/7.jpg" alt="User Image" class="rounded-circle" style="width: 30px;">
+                                        <small class="ml-2">Ali Tufan</small>
+                                    </div>
+                                    <small class="text-muted">1 year ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <img src="../images/17-850x550.jpg" class="card-img-top" alt="Property Image">
+                            <div class="card-body">
+                                <h5 class="card-title">$13,000/mo</h5>
+                                <p class="card-text">Luxury Family Home</p>
+                                <p class="card-text"><small>Apartment</small></p>
+                                <p class="card-text"><i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los Angeles, CA 90015</p>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="profile d-flex align-items-center">
+                                        <img src="../images/8.jpg" alt="User Image" class="rounded-circle" style="width: 30px;">
+                                        <small class="ml-2">Ali Tufan</small>
+                                    </div>
+                                    <small class="text-muted">1 year ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <img src="../images/12-1-850x550.jpg" class="card-img-top" alt="Property Image">
+                            <div class="card-body">
+                                <h5 class="card-title">$13,000/mo</h5>
+                                <p class="card-text">Luxury Family Home</p>
+                                <p class="card-text"><small>Apartment</small></p>
+                                <p class="card-text"><i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los Angeles, CA 90015</p>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="profile d-flex align-items-center">
+                                        <img src="../images/9.jpg" alt="User Image" class="rounded-circle" style="width: 30px;">
+                                        <small class="ml-2">Ali Tufan</small>
+                                    </div>
+                                    <small class="text-muted">1 year ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <img src="../images/9-850x550.jpg" class="card-img-top" alt="Property Image">
+                            <div class="card-body">
+                                <h5 class="card-title">$13,000/mo</h5>
+                                <p class="card-text">Luxury Family Home</p>
+                                <p class="card-text"><small>Apartment</small></p>
+                                <p class="card-text"><i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los Angeles, CA 90015</p>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="profile d-flex align-items-center">
+                                        <img src="../images/5.jpg" alt="User Image" class="rounded-circle" style="width: 30px;">
+                                        <small class="ml-2">Ali Tufan</small>
+                                    </div>
+                                    <small class="text-muted">1 year ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Property Card -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <img src="../images/16-850x550.jpg" class="card-img-top" alt="Property Image">
+                            <div class="card-body">
+                                <h5 class="card-title">$13,000/mo</h5>
+                                <p class="card-text">Luxury Family Home</p>
+                                <p class="card-text"><small>Apartment</small></p>
+                                <p class="card-text"><i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los Angeles, CA 90015</p>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="profile d-flex align-items-center">
+                                        <img src="../images/6.jpg" alt="User Image" class="rounded-circle" style="width: 30px;">
+                                        <small class="ml-2">Ali Tufan</small>
+                                    </div>
+                                    <small class="text-muted">1 year ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <img src="../images/22-850x550.jpg" class="card-img-top" alt="Property Image">
+                            <div class="card-body">
+                                <h5 class="card-title">$13,000/mo</h5>
+                                <p class="card-text">Luxury Family Home</p>
+                                <p class="card-text"><small>Apartment</small></p>
+                                <p class="card-text"><i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los Angeles, CA 90015</p>
+                                <hr>                                
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="profile d-flex align-items-center">
+                                        <img src="../images/7.jpg" alt="User Image" class="rounded-circle" style="width: 30px;">
+                                        <small class="ml-2">Ali Tufan</small>
+                                    </div>
+                                    <small class="text-muted">1 year ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <img src="../images/18-850x550.jpg" class="card-img-top" alt="Property Image">
+                            <div class="card-body">
+                                <h5 class="card-title">$13,000/mo</h5>
+                                <p class="card-text">Luxury Family Home</p>
+                                <p class="card-text"><small>Apartment</small></p>
+                                <p class="card-text"><i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los Angeles, CA 90015</p>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="profile d-flex align-items-center">
+                                        <img src="../images/8.jpg" alt="User Image" class="rounded-circle" style="width: 30px;">
+                                        <small class="ml-2">Ali Tufan</small>
+                                    </div>
+                                    <small class="text-muted">1 year ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card mb-4">
+                            <img src="../images/20-850x550.jpg" class="card-img-top" alt="Property Image">
+                            <div class="card-body">
+                                <h5 class="card-title">$13,000/mo</h5>
+                                <p class="card-text">Luxury Family Home</p>
+                                <p class="card-text"><small>Apartment</small></p>
+                                <p class="card-text"><i class="fas fa-map-marker-alt"></i> 1421 San Pedro St, Los Angeles, CA 90015</p>
+                                <hr>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <div class="profile d-flex align-items-center">
+                                        <img src="../images/9.jpg" alt="User Image" class="rounded-circle" style="width: 30px;">
+                                        <small class="ml-2">Ali Tufan</small>
+                                    </div>
+                                    <small class="text-muted">1 year ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat similar cards for other properties -->
+                </div>
+
+                <!-- Pagination -->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------- footer section (don't remove) -------------------- -->
+    <footer>
+      <!-- ----------------------------- top footer ------------------------------ -->
+      <div class="w-100 secondary-bg justify-content-center p-5">
+        <div class="container pt-5">
+          <div class="row pt-3">
+            <!-- ----------------------------- about site ----------------------------- -->
+            <div class="col-lg-3 col-sm-6 col-12">
+              <h4 class="text-capitalize text-white fw-bold mb-4">
+                about site
+              </h4>
+              <p class="light-gray-text-color fs-6 fw-semibold">
+                We're reimagining how you buy, sell and rent. It's now easier to
+                get into a place you love. So let's do this, together.
+              </p>
+            </div>
+
+            <!-- ----------------------------- Quick Links ----------------------------- -->
+            <div class="col-lg-3 col-sm-6 col-12">
+              <h4 class="text-capitalize text-white fw-bold mb-4">
+                Quick Links
+              </h4>
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >about us</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >terms & conditions</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >user's guide</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >support center</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >press info</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- ----------------------------- contaact us ----------------------------- -->
+            <div class="col-lg-3 col-sm-6 col-12">
+              <h4 class="text-capitalize text-white fw-bold mb-4">
+                contaact us
+              </h4>
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <a
+                    href="mailto:info@findhouse.com"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >info@findhouse.com</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >Collins Street West, Victoria</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >8007, Australia.</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="tel:+1 246-345-0699"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >+1 246-345-0699</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="tel:+1 246-345-0695"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >+1 246-345-0695</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- ----------------------------- social media ----------------------------- -->
+            <div class="col-lg-3 col-sm-6 col-12">
+              <h4 class="text-capitalize text-white fw-bold mb-4">follow us</h4>
+              <ul class="list-unstyled flex-row d-flex gap-4">
+                <li class="mb-3">
+                  <a
+                    href="mailto:info@findhouse.com"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                  >
+                    <i class="fs-5 fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    ><i class="fs-5 fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    ><i class="fs-5 fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="tel:+1 246-345-0699"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    ><i class="fs-5 fa-brands fa-pinterest"></i
+                  ></a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="tel:+1 246-345-0695"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    ><i class="fs-5 fa-solid fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+
+              <!-- ----------------------------- subscribe ----------------------------- -->
+              <h4 class="text-capitalize text-white fw-bold mb-4">Subscribe</h4>
+              <form
+                id="subscribeForm"
+                class="needs-validation d-flex f-row gap-3"
+                novalidate
+              >
+                <div class="position-relative">
+                  <input
+                    type="email"
+                    id="subscribeEmail"
+                    class="form-control rounded-pill"
+                    aria-describedby="validationServerEmailSubcribe"
+                    required
+                    placeholder="Enter your email"
+                  />
+                  <div
+                    id="validationServerEmailSubcribe"
+                    class="invalid-feedback position-absolute"
+                  >
+                    Please Enter Your Email.
+                  </div>
+                </div>
+                <button
+                  class="btn primary-bg text-white rounded-circle"
+                  type="submit"
+                  data-bs-target="#my-toast"
+                >
+                  <i class="fa-solid fa-angle-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------------------------- bottom footer ------------------------------ -->
+      <div class="w-100 dark-secondary-bg p-5">
+        <div class="container">
+          <div class="row">
+            <div
+              class="d-flex flex-md-row flex-sm-column flex-column justify-content-between row-gap-5"
+            >
+              <div class="d-flex">
+                <ul
+                  class="list-unstyled d-flex flex-md-row flex-sm-column flex-column gap-4 my-auto"
+                >
+                  <li>
+                    <a
+                      href="../../index.html"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >listing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >proparty</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >about us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >blog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p class="light-gray-text-color fs-5">
+                  © 2024 by compny. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- -------------------------- importing jquery --------------------------- -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <!-- --------------------- importing bootstrap js file --------------------- -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- ------------------- importing fontsawesome js file ------------------- -->
+    <script src="../js/all.min.js"></script>
+    <!-- ---------------------- importing custom js file ----------------------- -->
+    <script src="../js/index.js"></script>
+  </body>
+</html>

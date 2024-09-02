@@ -1,0 +1,117 @@
+/* importing Nunito font from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* importing the animation.css file */
+@import url("./animation.css");
+
+/* setting the font family */
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: rgb(255, 90, 95);
+  --secondary: rgb(36, 50, 74);
+
+  --light-secondary: rgb(62, 76, 102);
+  --light-primary: rgb(255, 120, 124);
+
+  --lighter-primary: rgb(255, 232, 233);
+  --lighter-secondary: rgb(138, 153, 179);
+
+  --dark-secondary: rgb(29, 41, 62);
+
+  --darker-secondary: rgb(20, 30, 47);
+
+  --overlay-dark: rgba(36, 50, 74, 0.65);
+  --overlay-lighter-dark: rgba(62, 76, 102, 0.4);
+
+  --gray-text: rgb(72, 72, 72);
+  --light-gray-text: rgb(138, 153, 179);
+
+  --black-50-bg: rgba(15, 21, 31, 0.5);
+
+
+  
+  scroll-behavior: smooth;
+}
+/* start of the home page */
+
+/* home page image title responsive */
+#homeMainImage {
+  h1 {
+    font-size: calc(1.5rem + 2vw);
+  }
+}
+
+/* Featured Properties cards overlay effect */
+
+#homeFeaturedProperties {
+  .card-overlay {
+    transition: all 0.5s;
+    overflow: hidden;
+    button {
+      opacity: 0;
+      transition: all 0.5s;
+      background-color: var(--overlay-lighter-dark);
+      clip-path: circle();
+    }
+    button:first-child {
+      transform: translateX(-100%);
+    }
+    button:last-child {
+      transform: translateX(100%);
+    }
+  }
+
+  .card-overlay:hover {
+    background-color: var(--overlay-dark) !important;
+    transition: all 0.5s;
+    cursor: pointer;
+    button {
+      opacity: 1;
+      transform: translateX(0);
+      transition: all 0.5s;
+    }
+  }
+
+  .card:hover {
+    box-shadow: 0 0 10px var(--overlay-lighter-dark);
+  }
+}
+
+/* start homeFindPropertyInCities section */
+
+#homeFindPropertyInCities {
+  .city-card {
+    height: 200px !important;
+  }
+}
+
+/* end of the home page */
+
+
+#aboutUs {
+.popup-video {
+  width: 70px !important;
+  height: 70px !important;
+  overflow: visible;
+  
+}
+.popup-video::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color:  rgba(255, 120, 125, 0.567);
+  z-index: -1;
+  animation: loading 2.5s linear infinite;
+}
+}

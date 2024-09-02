@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- --------------------- meta tags --------------------- -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- -------------------- importing bootstrap css file --------------------- -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <!-- ------------------- importing fontsawesome css file ------------------- -->
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <!-- ------------------- importing custom css file ------------------- -->
+    <link rel="stylesheet" href="../css/page3.css" />
+    <!-- ------------------ importing custom layout css file ------------------- -->
+    <link rel="stylesheet" href="../css/custome-layout.css" />
+    <!-- --------------------- importing animate css file ---------------------- -->
+    <link rel="stylesheet" href="../css/animation.css" />
+    <!-- -------------------- importing responsive css file -------------------- -->
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <!-- --------------------------- website favicon --------------------------- -->
+    <link rel="icon" href="../images/logo.png" />
+    <!-- ---------------------------- website title ---------------------------- -->
+    <title>Real Estate</title>
+  </head>
+  <body>
+    <!-- ------------------------ navbar (don't touch) ------------------------ -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark z-3 w-100 top-0 position-sticky p-3 px-5 position-sticky top-0 bg-white shadow"
+      id="navbar"
+    >
+      <!-- ---------------------------- navbar brand ----------------------------- -->
+      <a class="navbar-brand align-middle" href="../../index.html">
+        <img src="../images/logo.png" alt="logo" />
+        <span class="align-bottom fs-4 fw-bold gray-text-color">
+          FindHouse
+        </span>
+      </a>
+
+      <!-- ------------------- navbar toggler button -------------------- -->
+      <button
+        class="navbar-toggler primary-bg primary-outline-focus"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        id="navbarToggler"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- ------------------- navbar links -------------------- -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ml-auto text-capitalize fs-5">
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="../../index.html"
+              >home</a
+            >
+          </li>
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="#featuredProperties"
+              >property</a
+            >
+          </li>
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="#about"
+              >services</a
+            >
+          </li>
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="#contact"
+              >blog</a
+            >
+          </li>
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="#contact"
+              >about us</a
+            >
+          </li>
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="#contact"
+              >contact us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ------------- toast notification container (don't touch) ------------- -->
+    <div
+      aria-live="polite"
+      aria-atomic="true"
+      class="position-sticky top-0 end-0 z-3"
+    >
+      <div class="toast-container top-0 end-0 p-3 z-3 overflow-hidden">
+        <!-- ------------------------ subscribe email toast ------------------------ -->
+        <div
+          class="toast top-0 end-0 toast-loading"
+          data-bs-delay="4550"
+          role="alert"
+          id="my-toast"
+          aria-live="assertive"
+          aria-atomic="true"
+          data-autohide="false"
+        >
+          <div class="toast-header">
+            <div class="d-flex flex-row align-items-center gap-4">
+              <div>
+                <i class="fa-solid fa-circle-check text-success fs-3"></i>
+              </div>
+              <div>
+                <strong class="me-auto">Subscribed Successfully!!</strong>
+              </div>
+              <div class="ms-5">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="toast"
+                  aria-label="Close"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------------------- scroll up button --------------------------- -->
+    <button
+      class="btn secondary-bg rounded-circle scroll-up-btn position-fixed z-3 bottom-0 end-0 me-3 mb-3 d-none"
+      id="scrollUpBtn"
+    >
+      <i class="fa-solid fa-arrow-up primary-color fs-3"></i>
+    </button>
+
+    <!-- ----------------------------- main section ----------------------------- -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Main content -->
+            <div class="col-lg-8">
+                <h1 class="mb-3">Gorgeous Villa Bay View</h1>
+                <p class="text-muted">1421 San Pedro St, Los Angeles, CA 900015</p>
+                <h2 class="text-danger">$11,000/mo</h2>
+
+                <!-- Main Image -->
+                <img src="../images/1.jpg" class="img-fluid rounded mb-4" alt="Main Image">
+
+                <!-- Additional Images -->
+                <div class="row mb-4">
+                    <div class="col-4"><img src="../images/24-850x550.jpg" class="img-fluid rounded mb-2" alt="Image 1"></div>
+                    <div class="col-4"><img src="../images/23-850x550.jpg" class="img-fluid rounded mb-2" alt="Image 2"></div>
+                    <div class="col-4"><img src="../images/13-850x550.jpg" class="img-fluid rounded mb-2" alt="Image 3"></div>
+                    <div class="col-4"><img src="../images/17-850x550.jpg" class="img-fluid rounded mb-2" alt="Image 4"></div>
+                    <div class="col-4"><img src="../images/9-characteristics-4.jpg" class="img-fluid rounded mb-2" alt="Image 5"></div>
+                    <div class="col-4"><img src="../images/10-850x550.jpg" class="img-fluid rounded mb-2" alt="Image 5"></div>
+                </div>
+
+                <!-- Description Section -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4>Description</h4>
+                        <p>Evans Tower very high demand corner junior one bedroom plus a large balcony boasting full open NYC views.
+                            You need to see the views to believe them. Mint condition with new hardwood floors. Lots of closets plus
+                            washer and dryer.</p>
+                        <p>Fully furnished. Elegantly appointed condominium unit situated on premier location. PS6. The wide entry hall
+                            leads to a large living room with dining area. This expansive 2 bedroom and 2 renovated marble bathroom
+                            apartment has great windows. Despite the interior views, the apartments Southern and Eastern exposures
+                            allow for lovely natural light to fill every room. The master suite is surrounded by handcrafted milkwork and
+                            features incredible walk-in closet and storage space.</p>
+                        <p>Fully furnished. Elegantly appointed condominium unit situated on premier location. PS6. The wide entry hall
+                            leads to a large living room with dining area. This expansive 2 bedroom and 2 renovated marble bathroom
+                            apartment has great windows. Despite the interior views, the apartments Southern and Eastern exposures
+                            allow for lovely natural light to fill every room. The master suite is surrounded by handcrafted milkwork and
+                            features incredible walk-in closet and storage space.</p>
+                        <p>Fully furnished. Elegantly appointed condominium unit situated on premier location. PS6. The wide entry hall
+                            leads to a large living room with dining area. This expansive 2 bedroom and 2 renovated marble bathroom
+                            apartment has great windows. Despite the interior views, the apartments Southern and Eastern exposures
+                            allow for lovely natural light to fill every room. The master suite is surrounded by handcrafted milkwork and
+                            features incredible walk-in closet and storage space.</p>
+                        <!-- Additional repeated text omitted for brevity -->
+                    </div>
+                </div>
+
+                <!-- Property Details Section -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4>Property Details</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><strong>Property ID:</strong> HZ27</li>
+                                    <li><strong>Price:</strong> $130,000</li>
+                                    <li><strong>Property Size:</strong> 1560 Sq Ft</li>
+                                    <li><strong>Year Built:</strong> 2016-01-09</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><strong>Bedrooms:</strong> 8</li>
+                                    <li><strong>Bathrooms:</strong> 4</li>
+                                    <li><strong>Garage:</strong> 2</li>
+                                    <li><strong>Garage Size:</strong> 200 SqFt</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><strong>Property Type:</strong> Apartment</li>
+                                    <li><strong>Property Status:</strong> For Sale</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Details Section -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4>Additional Details</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><strong>Deposit:</strong> 20%</li>
+                                    <li><strong>Pool Size:</strong> 300 SqFt</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li><strong>Additional Rooms:</strong> Guest Bath</li>
+                                    <li><strong>Equipment:</strong> Grill - Gas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features Section -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4>Features</h4>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>Air Conditioning</li>
+                                    <li>Barbeque</li>
+                                    <li>Dryer</li>
+                                    <li>Gym</li>
+                                    <li>Laundry</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>Lawn</li>
+                                    <li>Microwave</li>
+                                    <li>Outdoor Shower</li>
+                                    <li>Refrigerator</li>
+                                    <li>Sauna</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul>
+                                    <li>Swimming Pool</li>
+                                    <li>TV Cable</li>
+                                    <li>Washer</li>
+                                    <li>WiFi</li>
+                                    <li>Window Coverings</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Location Section -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4>Location</h4>
+                        <div class="google-map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6021.474367375896!2d-0.1318403506259366!3d51.505171852183864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z2YTZhtiv2YbYjCDYp9mE2YXZhdmE2YPYqSDYp9mE2YXYqtit2K_YqQ!5e0!3m2!1sar!2seg!4v1725243317070!5m2!1sar!2seg"width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                       </div>
+                        
+                        <p>1421 San Pedro St, Los Angeles, CA 90015</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar content -->
+            <div class="col-lg-4">
+                <!-- Agent Contact -->
+                <div class="card mb-4 text-center">
+                    <div class="card-body">
+                        <img src="../images/5.jpg" class="rounded-circle mb-3" alt="Agent" style="width: 120px; height: 120px;">
+                        <h4>Samut Williams</h4>
+                        <p class="text-muted">123-456-7890</p>
+                        <p class="text-muted">info@homecisco.com</p>
+                        <a href="#" class="btn btn-primary">View My Listing</a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4>Contact Agent</h4>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="phone" class="form-control" placeholder="Your Phone">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-danger">Search</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Featured Properties -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4>Featured Properties</h4>
+                        <div class="d-flex mb-3">
+                            <img src="../images/5-850x550.jpg" class="img-thumbnail" alt="Featured Property 1">
+                            <div class="ms-3">
+                                <p class="mb-0 text-danger">$13,000/mo</p>
+                                <p>Luxury Family Home</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <img src="../images/11-850x550.jpg" class="img-thumbnail" alt="Featured Property 2">
+                            <div class="ms-3">
+                                <p class="mb-0 text-danger">$12,000/mo</p>
+                                <p>Luxury Family Home</p>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <img src="../images/12-1-850x550.jpg" class="img-thumbnail" alt="Featured Property 3">
+                            <div class="ms-3">
+                                <p class="mb-0 text-danger">$11,000/mo</p>
+                                <p>Renovated Apartment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categories -->
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h4>Categories Property</h4>
+                        <ul>
+                            <li>Apartment (6 properties)</li>
+                            <li>Condo (12 properties)</li>
+                            <li>Family House (8 properties)</li>
+                            <li>Modern Villa (26 properties)</li>
+                            <li>Town House (89 properties)</li>
+                       
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- -------------------- footer section (don't remove) -------------------- -->
+    <footer>
+      <!-- ----------------------------- top footer ------------------------------ -->
+      <div class="w-100 secondary-bg justify-content-center p-5">
+        <div class="container pt-5">
+          <div class="row pt-3">
+            <!-- ----------------------------- about site ----------------------------- -->
+            <div class="col-lg-3 col-sm-6 col-12">
+              <h4 class="text-capitalize text-white fw-bold mb-4">
+                about site
+              </h4>
+              <p class="light-gray-text-color fs-6 fw-semibold">
+                We're reimagining how you buy, sell and rent. It's now easier to
+                get into a place you love. So let's do this, together.
+              </p>
+            </div>
+
+            <!-- ----------------------------- Quick Links ----------------------------- -->
+            <div class="col-lg-3 col-sm-6 col-12">
+              <h4 class="text-capitalize text-white fw-bold mb-4">
+                Quick Links
+              </h4>
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >about us</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >terms & conditions</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >user's guide</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >support center</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >press info</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- ----------------------------- contaact us ----------------------------- -->
+            <div class="col-lg-3 col-sm-6 col-12">
+              <h4 class="text-capitalize text-white fw-bold mb-4">
+                contaact us
+              </h4>
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <a
+                    href="mailto:info@findhouse.com"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >info@findhouse.com</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >Collins Street West, Victoria</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >8007, Australia.</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="tel:+1 246-345-0699"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >+1 246-345-0699</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="tel:+1 246-345-0695"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >+1 246-345-0695</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- ----------------------------- social media ----------------------------- -->
+            <div class="col-lg-3 col-sm-6 col-12">
+              <h4 class="text-capitalize text-white fw-bold mb-4">follow us</h4>
+              <ul class="list-unstyled flex-row d-flex gap-4">
+                <li class="mb-3">
+                  <a
+                    href="mailto:info@findhouse.com"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                  >
+                    <i class="fs-5 fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    ><i class="fs-5 fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    ><i class="fs-5 fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="tel:+1 246-345-0699"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    ><i class="fs-5 fa-brands fa-pinterest"></i
+                  ></a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="tel:+1 246-345-0695"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    ><i class="fs-5 fa-solid fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+
+              <!-- ----------------------------- subscribe ----------------------------- -->
+              <h4 class="text-capitalize text-white fw-bold mb-4">Subscribe</h4>
+              <form
+                id="subscribeForm"
+                class="needs-validation d-flex f-row gap-3"
+                novalidate
+              >
+                <div class="position-relative">
+                  <input
+                    type="email"
+                    id="subscribeEmail"
+                    class="form-control rounded-pill"
+                    aria-describedby="validationServerEmailSubcribe"
+                    required
+                    placeholder="Enter your email"
+                  />
+                  <div
+                    id="validationServerEmailSubcribe"
+                    class="invalid-feedback position-absolute"
+                  >
+                    Please Enter Your Email.
+                  </div>
+                </div>
+                <button
+                  class="btn primary-bg text-white rounded-circle"
+                  type="submit"
+                  data-bs-target="#my-toast"
+                >
+                  <i class="fa-solid fa-angle-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------------------------- bottom footer ------------------------------ -->
+      <div class="w-100 dark-secondary-bg p-5">
+        <div class="container">
+          <div class="row">
+            <div
+              class="d-flex flex-md-row flex-sm-column flex-column justify-content-between row-gap-5"
+            >
+              <div class="d-flex">
+                <ul
+                  class="list-unstyled d-flex flex-md-row flex-sm-column flex-column gap-4 my-auto"
+                >
+                  <li>
+                    <a
+                      href="../../index.html"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >listing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >proparty</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >about us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >blog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p class="light-gray-text-color fs-5">
+                  © 2024 by compny. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- -------------------------- importing jquery --------------------------- -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <!-- --------------------- importing bootstrap js file --------------------- -->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- ------------------- importing fontsawesome js file ------------------- -->
+    <script src="../js/all.min.js"></script>
+    <!-- ---------------------- importing custom js file ----------------------- -->
+    <script src="../js/index.js"></script>
+  </body>
+</html>

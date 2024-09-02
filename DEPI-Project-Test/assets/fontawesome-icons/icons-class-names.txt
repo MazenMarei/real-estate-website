@@ -1,0 +1,109 @@
+/// right-left arrow
+
+<i class="fa-solid fa-right-left"></i>
+
+// angle right
+
+<i class="fa-solid fa-angle-right"></i>
+
+/// chevron-right 
+
+<i class="fa-solid fa-chevron-right"></i>
+
+/// angle down
+
+<i class="fa-solid fa-angle-down"></i>
+
+///  arrow up 
+
+<i class="fa-solid fa-arrow-up-long"></i>
+
+/// arrow right 
+
+<i class="fa-solid fa-arrow-right"></i>
+
+/// arrow left 
+
+<i class="fa-solid fa-arrow-left"></i>
+
+/// heart
+
+<i class="fa-regular fa-heart"></i>
+
+/// location-dot
+
+<i class="fa-solid fa-location-dot"></i>
+
+
+/// house house-chimney
+
+<i class="fa-solid fa-house-chimney"></i>
+
+
+/// hand-holding-dollar  finance
+
+<i class="fa-solid fa-hand-holding-dollar"></i>
+
+
+/// users 
+
+<i class="fa-solid fa-users"></i>
+
+
+// Facebook 
+
+<i class="fa-brands fa-facebook-f"></i>
+
+// twitter
+
+<i class="fa-brands fa-twitter"></i>
+
+
+/// Instagram 
+
+<i class="fa-brands fa-instagram"></i>
+
+/// Pinterest
+
+<i class="fa-brands fa-pinterest"></i>
+
+// website 
+
+<i class="fa-solid fa-globe"></i>
+
+/// search
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+/// three dots 
+
+<i class="fa-solid fa-ellipsis-vertical"></i>
+
+/// check mark
+
+<i class="fa-solid fa-check"></i>
+
+
+/// calendar-days
+
+<i class="fa-regular fa-calendar-days"></i>
+ 
+
+// play video 
+
+<i class="fa-solid fa-play"></i>
+
+
+//// map Iframe
+
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10780.536425933595!2d-111.30412713744902!3d47.50677946286641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x534237c2c842eefb%3A0x9cd5323a702c35ba!2sLifeStyle%20Real%20Estate%20Firm!5e0!3m2!1sen!2seg!4v1724758236133!5m2!1sen!2seg"
+      width="600"
+      height="450"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+

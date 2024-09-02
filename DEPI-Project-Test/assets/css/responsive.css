@@ -1,0 +1,50 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .home-navbar {
+    position: sticky !important;
+    top: 0%;
+    background-color: white !important;
+  }
+  #homeFindPropertyInCities {
+    .city-card {
+      height: 200px !important;
+    }
+  }
+  
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .home-navbar {
+    position: absolute !important;
+    top: 0;
+    background-color: transparent !important;
+  }
+  .home-navbar div:first-child {
+    background-color: transparent !important;
+  }
+  .home-navbar ul li a {
+    color: white !important;
+  }
+
+  #homeFindPropertyInCities {
+    .city-card {
+      height: 300px !important;
+    }
+  }
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
