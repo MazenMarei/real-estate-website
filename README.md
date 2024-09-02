@@ -45,7 +45,7 @@ To run this project locally, follow these steps:
 - **Contact Form**: Fill out the form to contact the real estate agency.
 
 ## Screenshots
-![Home Page](https://github.com/MazenMarei/real-estate-website/blob/Ux_Design/real-state/Mazen/01.png)
+![Home Page](chrome-extension://fdpohaocaechififmbbbbbknoalclacl/capture.html?id=2&url=http%3A%2F%2F127.0.0.1%3A5500%2Findex.html)
 
 ## Contributing
 If you would like to contribute to this project, please follow these steps:
