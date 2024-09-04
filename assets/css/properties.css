@@ -1,0 +1,26 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.btn-danger {
+    background-color: #ff5a5f;
+    border-color: #ff5a5f;
+}
+
+.profile img {
+    width: 30px;
+    height: 30px;
+}
