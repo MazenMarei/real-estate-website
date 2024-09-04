@@ -102,6 +102,7 @@ $(document).ready(() => {
   }
 
   /* ------------------------ properties cards carousel ----------------------- */
+  if($(".card-carousel").length !== 0) {
   $(".card-carousel").owlCarousel({
     loop: false,
     margin: 25,
@@ -140,5 +141,7 @@ $(document).ready(() => {
       },
     },
   });
+  }
+
 
 });
