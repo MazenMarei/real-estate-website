@@ -38,7 +38,7 @@
 }
 
 .overlay-lighter-dark-color {
-  color: var(--overlay-lighter-dark) !important;
+  color: var(--overlaay-lighter-dark) !important;
 }
 
 .gray-text-color {
@@ -86,34 +86,17 @@
 }
 
 .overlay-lighter-dark-bg {
-  background-color: var(--overlay-lighter-dark) !important;
+  background-color: var(--overlaay-lighter-dark) !important;
 }
 
 .gray-text-bg {
   background-color: var(--gray-text) !important;
 }
-
-.light-gray-bg {
-  background-color: #f7f7f7 !important;
-}
-
 .black-50-bg {
   background-color: rgba(15, 21, 31, 0.5) !important;
 }
 
-.gray-border {
-  border: 1px solid rgba(0, 0, 0, 0.1) !important;
-}
-
-.gradient-overlay {
-  background-image: linear-gradient(transparent 0%, rgba(36, 50, 74, 0.9) 100%);
-}
-
-.primary-color-hover {
-  transition: color 0.3s;
-}
 .primary-color-hover:hover {
-  transition: color 0.3s;
   color: var(--primary) !important;
 }
 
@@ -152,17 +135,3 @@
   background-color: green;
   animation: toastLoading 5s linear;
 }
-
-.slide-and-fade-in {
-  animation: slideAndFadeIn 0.3s linear;
-}
-
-.slide-and-fade-out {
-  animation: slideAndFadeout 0.3s linear;
-}
-
-
-.slide-up-and-fade-in {
-  animation: slideUpAndFadeIn .85s linear;
-}
-
