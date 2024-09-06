@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------------------- importing bootstrap css file --------------------- -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- ------------------- importing fontsawesome css file ------------------- -->
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+
+    <!-- ------------------ importing custom layout css file ------------------- -->
+    <link rel="stylesheet" href="./assets/css/custome-layout.css" />
+    <!-- --------------------- importing animate css file ---------------------- -->
+    <link rel="stylesheet" href="./assets/css/animation.css" />
+    <!-- -------------------- importing responsive css file -------------------- -->
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+    <!-- --------------------------- website favicon --------------------------- -->
+    <link rel="icon" href="./assets/images/logo.png" />
+    <!-- ---------------------------- website title ---------------------------- -->
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark z-3 w-100 top-0 position-sticky p-3 px-5 position-sticky top-0 bg-white shadow"
+      id="navbar"
+    >
+      <!-- ---------------------------- navbar brand ----------------------------- -->
+      <a class="navbar-brand align-middle" href="./index.html">
+        <img src="./assets/images/logo.png" alt="logo" />
+        <span class="align-bottom fs-4 fw-bold gray-text-color">
+          FindHouse
+        </span>
+      </a>
+
+      <!-- ------------------- navbar toggler button -------------------- -->
+      <button
+        class="navbar-toggler primary-bg primary-outline-focus"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        id="navbarToggler"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- ------------------- navbar links -------------------- -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ml-auto text-capitalize fs-5">
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="./index.html"
+              >home</a
+            >
+          </li>
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="#featuredProperties"
+              >property</a
+            >
+          </li>
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="./services.html"
+              >services</a
+            >
+          </li>
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="#contact"
+              >blog</a
+            >
+          </li>
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="#contact"
+              >about us</a
+            >
+          </li>
+          <!-- ------------------------------ nav item ------------------------------- -->
+          <li class="nav-item">
+            <a
+              class="nav-link dark-secondary-color primary-color-hover"
+              href="./contact-us.html"
+              >contact us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ------------- toast notification container (don't touch) ------------- -->
+    <div
+      aria-live="polite"
+      aria-atomic="true"
+      class="position-sticky top-0 end-0 z-3"
+    >
+      <div class="toast-container top-0 end-0 p-3 z-3 overflow-hidden">
+        <!-- ------------------------ subscribe email toast ------------------------ -->
+        <div
+          class="toast top-0 end-0 toast-loading"
+          data-bs-delay="4550"
+          role="alert"
+          id="my-toast"
+          aria-live="assertive"
+          aria-atomic="true"
+          data-autohide="false"
+        >
+          <div class="toast-header">
+            <div class="d-flex flex-row align-items-center gap-4">
+              <div>
+                <i class="fa-solid fa-circle-check text-success fs-3"></i>
+              </div>
+              <div>
+                <strong class="me-auto">Subscribed Successfully!!</strong>
+              </div>
+              <div class="ms-5">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="toast"
+                  aria-label="Close"
+                ></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------- scroll up button (don't touch) -------------------- -->
+    <button
+      class="btn secondary-bg rounded-circle scroll-up-btn position-fixed z-3 bottom-0 end-0 me-3 mb-3 d-none"
+      id="scrollUpBtn"
+    >
+      <i class="fa-solid fa-arrow-up primary-color fs-3"></i>
+    </button>
+
+    <!-- ----------------------------- main image section ----------------------------- -->
+
+    <section id="contactusMainImage">
+      <div
+        class="container-fluid p-0 position-relative w-100 justify-content-center"
+      >
+        <div class="position-relative overflow-hidden h-100 overflow-hidden">
+          <img
+            src="./assets/images/bg-breadcrumb.jpg"
+            alt="contact us main image"
+            class="img-fluid w-100"
+          />
+        </div>
+        <div class="overlay-dark-bg h-100 w-100 position-absolute top-0"></div>
+        <div
+          class="position-absolute top-50 translate-middle start-50 container"
+        >
+          <div class="row">
+            <div class="d-flex flex-row align-items-center gap-1 mb-3">
+              <a
+                href="./index.html"
+                class="text-decoration-none primary-color text-capitalize fw-semibold"
+                >home</a
+              >
+              <i class="fa-solid fa-angle-right text-white"></i>
+              <p
+                href="#"
+                class="text-decoration-none text-white text-capitalize fw-semibold m-0"
+              >
+                Contact Us
+              </p>
+            </div>
+            <h1 class="text-white fw-bold fs-1">Contact Us</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------end----------->
+
+    <!---- contact us section   ---->
+    <section id="contactUs" class="light-gray-bg py-5">
+      <!-- contact us container  -->
+      <div class="container position-relative">
+        <!-- contact us row  -->
+        <div class="row gap-5">
+          <!-- form column  -->
+          <div
+            class="col-lg-8 col-sm-12 justify-content-cneter col-12 bg-white rounded-2 p-4"
+          >
+            <h5>Send Us Email</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus natus eveniet enim iste dolores vero sed deserunt
+              ipsam illum fuga quos velit adipisci facere repudiandae debitis,
+              ex, reiciendis reprehenderit et!
+            </p>
+            <!-- contct us form  -->
+            <form class="ps-2 needs-validation" id="contactUsForm" novalidate>
+              <div class="row gap-3 w-100">
+                <!-- first inputs row  -->
+                <div class="row gap-3">
+                  <div class="col p-0">
+                    <input
+                      type="text"
+                       placeholder="Name"
+                      class=" w-100 p-2 rounded-2 bg-transparent border-1 border border-dark-subtle test"
+                      required
+                    />
+                    <div class="invalid-feedback">
+                        Please type your name.
+                      </div>
+                  </div>
+                  <div class="col">
+                    <input
+                    type="email"
+                    placeholder="Email"
+                    class="w-100 p-2 rounded-2 bg-transparent border-1 border border-dark-subtle"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please type your email.
+                  </div>
+                  </div>
+                 
+                </div>
+                <!-- secound inputs row  -->
+                <div class="row gap-3">
+                    <div class="col p-0">
+                          <input
+                    type="text"
+                    placeholder="Phone"
+                    class="w-100 p-2 rounded-2 bg-transparent border-1 border border-dark-subtle"
+                  />
+                  <div class="invalid-feedback">
+                    Please type your phone number.
+                  </div>
+                    </div>
+                <div class="col">
+                   <input
+                    type="text"
+                    placeholder="Subject"
+                    class="w-100 p-2 rounded-2 bg-transparent border-1 border border-dark-subtle"
+                    required
+                  /> 
+
+                  <div class="invalid-feedback">
+                    Please type your subject.
+                  </div>
+                </div>
+                  
+                </div>
+                <!-- text erea row  -->
+                <div class="row">
+                  <textarea
+                    placeholder="Your Message"
+                    class="col p-3 rounded-2 bg-transparent border-1 border border-dark-subtle"
+                    rows="7"
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">
+                    Please type your message.
+                  </div>
+                </div>
+
+                <!-- form submit btn  -->
+                <button
+                  type="submit"
+                  class="btn btn-danger col-lg-3 col-6 rounded-2 p-2"
+                  data-bs-target="#my-toast"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- info column  -->
+          <div
+            class="col-lg-3 col-sm-12 justify-content-cneter col-12 bg-white rounded-2 p-3"
+          >
+            <!-- mian row  -->
+            <div class="row">
+              <h5>Contact Us</h5>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt
+                cum sed accusantium, !
+              </p>
+            </div>
+
+            <div class="row">
+              <h5>Address</h5>
+
+              <p>2301 Ravenswood Rd Madison,WI 53711</p>
+            </div>
+
+            <div class="row">
+              <h5 class="text-capitalize">Phone</h5>
+              <p>(315) 905-2321</p>
+            </div>
+
+            <div class="row">
+              <h5 class="text-capitalize">Mail</h5>
+              <p>info@findhouse.com</p>
+            </div>
+
+            <div class="row">
+              <h5 class="text-capitalize">Skype</h5>
+              <p>findhouse.com</p>
+            </div>
+            <!--social media-->
+
+            <div class="row">
+              <h5 class="text-capitalize">follow Us</h5>
+              <ul class="list-unstyled flex-row d-flex gap-1">
+                <li class="mb-3 px-3 py-2 rounded-1 light-gray-bg">
+                  <a
+                    href="mailto:info@findhouse.com"
+                    class="primary-color-hover text-black text-decoration-none text-capitalize fw-semibold"
+                  >
+                    <i class="fs-6 fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="mb-3 px-3 py-2 rounded-1 light-gray-bg">
+                  <a
+                    href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                    class="primary-color-hover text-black text-decoration-none text-capitalize fw-semibold"
+                    ><i class="fs-6 fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="mb-3 px-3 py-2 rounded-1 light-gray-bg">
+                  <a
+                    href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                    class="primary-color-hover text-black text-decoration-none text-capitalize fw-semibold"
+                    ><i class="fs-6 fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="mb-3 px-3 py-2 rounded-1 light-gray-bg">
+                  <a
+                    href="tel:+1 246-345-0699"
+                    class="primary-color-hover text-black text-decoration-none text-capitalize fw-semibold"
+                    ><i class="fs-6 fa-brands fa-pinterest"></i
+                  ></a>
+                </li>
+                <li class="mb-3 px-3 py-2 rounded-1 light-gray-bg">
+                  <a
+                    href="tel:+1 246-345-0695"
+                    class="primary-color-hover text-black text-decoration-none text-capitalize fw-semibold"
+                    ><i class="fs-6 fa-solid fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- map-->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10780.536425933595!2d-111.30412713744902!3d47.50677946286641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x534237c2c842eefb%3A0x9cd5323a702c35ba!2sLifeStyle%20Real%20Estate%20Firm!5e0!3m2!1sen!2seg!4v1724758236133!5m2!1sen!2seg"
+      width="100%"
+      height="450"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+    <!-- --------------------------- footer section ---------------------------- -->
+    <footer>
+      <!-- ----------------------------- top footer ------------------------------ -->
+      <div class="w-100 secondary-bg justify-content-center p-5">
+        <div class="container pt-5">
+          <div class="row pt-3">
+            <!-- ----------------------------- about site ----------------------------- -->
+            <div class="col-lg-3 col-sm-6 col-12">
+              <h4 class="text-capitalize text-white fw-bold mb-4">
+                about site
+              </h4>
+              <p class="light-gray-text-color fs-6 fw-semibold">
+                We're reimagining how you buy, sell and rent. It's now easier to
+                get into a place you love. So let's do this, together.
+              </p>
+            </div>
+
+            <!-- ----------------------------- Quick Links ----------------------------- -->
+            <div class="col-lg-3 col-sm-6 col-12">
+              <h4 class="text-capitalize text-white fw-bold mb-4">
+                Quick Links
+              </h4>
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <a
+                    href="./assets/html/about-us.html"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >about us</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >terms & conditions</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >user's guide</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >support center</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="#"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >press info</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- ----------------------------- contaact us ----------------------------- -->
+            <div class="col-lg-3 col-sm-6 col-12">
+              <h4 class="text-capitalize text-white fw-bold mb-4">
+                contaact us
+              </h4>
+              <ul class="list-unstyled">
+                <li class="mb-3">
+                  <a
+                    href="mailto:info@findhouse.com"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >info@findhouse.com</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >Collins Street West, Victoria</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >8007, Australia.</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="tel:+1 246-345-0699"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >+1 246-345-0699</a
+                  >
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="tel:+1 246-345-0695"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    >+1 246-345-0695</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- ----------------------------- social media ----------------------------- -->
+            <div class="col-lg-3 col-sm-6 col-12">
+              <h4 class="text-capitalize text-white fw-bold mb-4">follow us</h4>
+              <ul class="list-unstyled flex-row d-flex gap-4">
+                <li class="mb-3">
+                  <a
+                    href="mailto:info@findhouse.com"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                  >
+                    <i class="fs-5 fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    ><i class="fs-5 fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    ><i class="fs-5 fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="tel:+1 246-345-0699"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    ><i class="fs-5 fa-brands fa-pinterest"></i
+                  ></a>
+                </li>
+                <li class="mb-3">
+                  <a
+                    href="tel:+1 246-345-0695"
+                    class="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
+                    ><i class="fs-5 fa-solid fa-globe"></i
+                  ></a>
+                </li>
+              </ul>
+
+              <!-- ----------------------------- subscribe ----------------------------- -->
+              <h4 class="text-capitalize text-white fw-bold mb-4">Subscribe</h4>
+              <form
+                id="subscribeForm"
+                class="needs-validation d-flex f-row gap-3"
+                novalidate
+              >
+                <div class="position-relative">
+                  <input
+                    type="email"
+                    id="subscribeEmail"
+                    class="form-control rounded-pill"
+                    aria-describedby="validationServerEmailSubcribe"
+                    required
+                    placeholder="Enter your email"
+                  />
+                  <div
+                    id="validationServerEmailSubcribe"
+                    class="invalid-feedback position-absolute"
+                  >
+                    Please Enter Your Email.
+                  </div>
+                </div>
+                <button
+                  class="btn primary-bg text-white rounded-circle"
+                  type="submit"
+                  data-bs-target="#my-toast"
+                >
+                  <i class="fa-solid fa-angle-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ----------------------------- bottom footer ------------------------------ -->
+      <div class="w-100 dark-secondary-bg p-5">
+        <div class="container">
+          <div class="row">
+            <div
+              class="d-flex flex-md-row flex-sm-column flex-column justify-content-between row-gap-5"
+            >
+              <div class="d-flex">
+                <ul
+                  class="list-unstyled d-flex flex-md-row flex-sm-column flex-column gap-4 my-auto"
+                >
+                  <li>
+                    <a
+                      href="./index.html"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >listing</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >property</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="./assets/html/about-us.html"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >about us</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >blog</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
+                      >contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p class="light-gray-text-color fs-5">
+                  © 2024 by compny. All rights reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <!-- import custome js file  -->
+    <script src="./assets/js/contact-us.js"></script>
+  </body>
+</html>
