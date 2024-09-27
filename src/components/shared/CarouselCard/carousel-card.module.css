@@ -1,0 +1,37 @@
+.overlay {
+  transition: all 0.5s;
+  overflow: hidden;
+
+  button {
+    opacity: 0;
+    transition: all 0.5s;
+    background-color: var(--overlay-lighter-dark);
+    clip-path: circle();
+  }
+  button:first-child {
+    transform: translateX(-100%);
+  }
+  button:last-child {
+    transform: translateX(100%);
+  }
+}
+
+.overlay:hover {
+  background-color: var(--overlay-dark) !important;
+  transition: all 0.5s;
+  cursor: pointer;
+
+  button {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.5s;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 0 10px var(--overlay-lighter-dark);
+}
+
+.card {
+  height: 300px !important;
+}

@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import CostumeNavbar from "./components/shared/Navbar/CostumeNavbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import CostumeFooter from "./components/shared/Footer/CustomFooter";
+import ScrollBtn from "./components/ScrollBtn";
 
-function App() {
+export default function App() {
+  // * returning the JSX of App
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <CostumeNavbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          {/* <Route path="/contact" element={<Contact />} /> */}
+        </Routes>
+        <ScrollBtn />
+        <CostumeFooter />
+      </Router>
+    </>
   );
 }
-
-export default App;
