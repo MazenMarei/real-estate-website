@@ -121,6 +121,10 @@
   background-color: var(--primary) !important;
 }
 
+.overlay-dark-bg-hover:hover {
+  background-color: var(--overlay-dark) !important;
+}
+
 .primary-outline-focus:focus {
   box-shadow: 0 0 0 0.25rem var(--light-primary) !important;
 }
@@ -166,3 +170,18 @@
   animation: slideUpAndFadeIn .85s linear;
 }
 
+.custom-active-pagination-bullet {
+  background-color: #869791 !important;
+}
+
+.custom-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #D6D6D6;
+  cursor: pointer;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity .2s ease;
+  border-radius: 30px;
+}

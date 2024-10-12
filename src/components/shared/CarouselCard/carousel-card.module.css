@@ -2,16 +2,16 @@
   transition: all 0.5s;
   overflow: hidden;
 
-  button {
+  .controlBtn {
     opacity: 0;
     transition: all 0.5s;
     background-color: var(--overlay-lighter-dark);
     clip-path: circle();
   }
-  button:first-child {
+  .controlBtn:first-of-type {
     transform: translateX(-100%);
   }
-  button:last-child {
+  .controlBtn:last-of-type {
     transform: translateX(100%);
   }
 }
@@ -19,9 +19,8 @@
 .overlay:hover {
   background-color: var(--overlay-dark) !important;
   transition: all 0.5s;
-  cursor: pointer;
 
-  button {
+  .controlBtn {
     opacity: 1;
     transform: translateX(0);
     transition: all 0.5s;
@@ -33,5 +32,5 @@
 }
 
 .card {
-  height: 300px !important;
+  transition: all 0.5s;
 }

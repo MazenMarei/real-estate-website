@@ -193,7 +193,7 @@ export default function CostumeFooter() {
                 validated={validated}
                 onSubmit={handleSubmit}
                 className="d-flex f-row gap-3"
-                novalidate
+                noValidate
               >
                 <div className="position-relative">
                   <Form.Control

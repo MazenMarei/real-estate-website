@@ -8,9 +8,6 @@ export default function ScrollBtn() {
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log(window.scrollY + document.documentElement.clientHeight);
-      console.log(document.documentElement.scrollHeight / 4);
-      console.log(document.documentElement.scrollHeight);
 
       if (
         window.scrollY + document.documentElement.clientHeight >=
