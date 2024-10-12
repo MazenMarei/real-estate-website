@@ -11,7 +11,17 @@ import miami from "../../assets/images/miami.jpg";
 import los from "../../assets/images/los.jpg";
 import newyork from "../../assets/images/newyork.jpg";
 import florida from "../../assets/images/florida.jpg";
+import houseIsolatedImg from "../../assets/images/house-isolated-field-1.webp";
+import characteristicsImg from "../../assets/images/9-characteristics-4.jpg";
+import blogImg from "../../assets/images/blog2-op5h9ukqohpvlj56kvz57kxf15eqhdeymxa36hjeck.jpg";
 import { Link } from "react-router-dom";
+import kate from "../../assets/images/6.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHandHoldingDollar,
+  faHome,
+  faUsers,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -163,59 +173,103 @@ export default function Home() {
 
           {/* <!-- ----------------------------- why us row ------------------------------ --> */}
           <div className="row justify-content-center gap-5 py-5">
-            <div className="col-11 px-0">
-              <div className="owl-carousel card-carousel owl-theme">
-                {/* <!-- -------------------------------- card --------------------------------- --> */}
-                <div className="bg-white rounded d-flex flex-column justify-content-center align-items-center text-center p-5 gap-5">
-                  {/* <!-- ------------------------------ card top ------------------------------- --> */}
-                  <div className="rounded-circle lighter-primary-bg p-5">
-                    <i className="fa-solid fa-users fs-1 fw-bold primary-color"></i>
+            <div className="col-11 px-0 row h-100">
+              <Swiper
+                rewind={true}
+                pagination={{
+                  clickable: true,
+                  el: ".why-us-swiper-pagination",
+                  bulletActiveClass: "custom-active-pagination-bullet",
+                  bulletClass: "custom-pagination-bullet",
+                }}
+                modules={[Pagination, Autoplay]}
+                breakpoints={{
+                  // when window width is >= 320px
+                  320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  // when window width is >= 480px
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                  },
+                  // when window width is >= 640px
+                  992: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                  },
+                }}
+              >
+                <SwiperSlide>
+                  {/* <!-- -------------------------------- card --------------------------------- --> */}
+                  <div className="h-100 bg-white rounded d-flex flex-column justify-content-center align-items-center text-center p-5 gap-5">
+                    {/* <!-- ------------------------------ card top ------------------------------- --> */}
+                    <div className="rounded-circle lighter-primary-bg p-5">
+                      <FontAwesomeIcon
+                        icon={faUsers}
+                        className="fs-1 fw-bold primary-color"
+                      />
+                    </div>
+                    {/* <!-- ------------------------------ card body ------------------------------- --> */}
+                    <div>
+                      <h4 className="fw-semibold gray-text-color">
+                        Trusted By Thousands
+                      </h4>
+                      <p className="fw-semibold gray-text-color">
+                        Aliquam dictum elit vitae mauris facilisis at dictum
+                        urna dignissim donec vel lectus velis.
+                      </p>
+                    </div>
                   </div>
-                  {/* <!-- ------------------------------ card body ------------------------------- --> */}
-                  <div>
-                    <h4 className="fw-semibold gray-text-color">
-                      Trusted By Thousands
-                    </h4>
-                    <p className="fw-semibold gray-text-color">
-                      Aliquam dictum elit vitae mauris facilisis at dictum urna
-                      dignissim donec vel lectus velis.
-                    </p>
+                </SwiperSlide>
+                <SwiperSlide>
+                  {/* <!-- -------------------------------- card --------------------------------- --> */}
+                  <div className="h-100 bg-white rounded d-flex flex-column justify-content-center align-items-center text-center p-5 gap-5">
+                    {/* <!-- ------------------------------ card top ------------------------------- --> */}
+                    <div className="rounded-circle lighter-primary-bg p-5">
+                      <FontAwesomeIcon
+                        icon={faHome}
+                        className="fs-1 fw-bold primary-color"
+                      />
+                    </div>
+                    {/* <!-- ------------------------------ card body ------------------------------- --> */}
+                    <div>
+                      <h4 className="fw-semibold gray-text-color">
+                        Wide Renge Of Properties
+                      </h4>
+                      <p className="fw-semibold gray-text-color">
+                        Aliquam dictum elit vitae mauris facilisis at dictum
+                        urna dignissim donec vel lectus velis.
+                      </p>
+                    </div>
                   </div>
-                </div>
-                {/* <!-- -------------------------------- card --------------------------------- --> */}
-                <div className="bg-white rounded d-flex flex-column justify-content-center align-items-center text-center p-5 gap-5">
-                  {/* <!-- ------------------------------ card top ------------------------------- --> */}
-                  <div className="rounded-circle lighter-primary-bg p-5">
-                    <i className="fa-solid fa-house-chimney fs-1 fw-bold primary-color"></i>
+                </SwiperSlide>
+                <SwiperSlide>
+                  {/* <!-- -------------------------------- card --------------------------------- --> */}
+                  <div className="h-100 bg-white rounded d-flex flex-column justify-content-center align-items-center text-center p-5 gap-5">
+                    {/* <!-- ------------------------------ card top ------------------------------- --> */}
+                    <div className="rounded-circle lighter-primary-bg p-5">
+                      <FontAwesomeIcon
+                        icon={faHandHoldingDollar}
+                        className="fs-1 fw-bold primary-color"
+                      />
+                    </div>
+                    {/* <!-- ------------------------------ card body ------------------------------- --> */}
+                    <div>
+                      <h4 className="fw-semibold gray-text-color">
+                        Financing Made Easy
+                      </h4>
+                      <p className="fw-semibold gray-text-color">
+                        Aliquam dictum elit vitae mauris facilisis at dictum
+                        urna dignissim donec vel lectus velis.
+                      </p>
+                    </div>
                   </div>
-                  {/* <!-- ------------------------------ card body ------------------------------- --> */}
-                  <div>
-                    <h4 className="fw-semibold gray-text-color">
-                      Wide Renge Of Properties
-                    </h4>
-                    <p className="fw-semibold gray-text-color">
-                      Aliquam dictum elit vitae mauris facilisis at dictum urna
-                      dignissim donec vel lectus velis.
-                    </p>
-                  </div>
-                </div>
-                {/* <!-- -------------------------------- card --------------------------------- --> */}
-                <div className="bg-white rounded d-flex flex-column justify-content-center align-items-center text-center p-5 gap-5">
-                  {/* <!-- ------------------------------ card top ------------------------------- --> */}
-                  <div className="rounded-circle lighter-primary-bg p-5">
-                    <i className="fa-solid fa-hand-holding-dollar fs-1 fw-bold primary-color"></i>
-                  </div>
-                  {/* <!-- ------------------------------ card body ------------------------------- --> */}
-                  <div>
-                    <h4 className="fw-semibold gray-text-color">
-                      Financing Made Easy
-                    </h4>
-                    <p className="fw-semibold gray-text-color">
-                      Aliquam dictum elit vitae mauris facilisis at dictum urna
-                      dignissim donec vel lectus velis.
-                    </p>
-                  </div>
-                </div>
+                </SwiperSlide>
+              </Swiper>
+              <div className="row justify-content-center">
+                <div className="why-us-swiper-pagination d-lg-none justify-content-center d-flex flex-row p-3 fs-2"></div>
               </div>
             </div>
           </div>
@@ -234,164 +288,205 @@ export default function Home() {
           </div>
 
           {/* <!-- ----------------------------- Articles row ----------------------------- --> */}
-          <div className="row justify-content-center gap-4 mx-auto mb-5">
-            <div className="owl-carousel card-carousel owl-theme col-11">
+          <div className="row justify-content-center gap-4 mx-auto mb-5 h-100">
+            <Swiper
+              rewind={true}
+              pagination={{
+                clickable: true,
+                el: ".articles-swiper-pagination",
+                bulletActiveClass: "custom-active-pagination-bullet",
+                bulletClass: "custom-pagination-bullet",
+              }}
+              modules={[Pagination, Autoplay]}
+              breakpoints={{
+                // when window width is >= 320px
+                320: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                // when window width is >= 480px
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+                },
+                // when window width is >= 640px
+                992: {
+                  slidesPerView: 3,
+                  spaceBetween: 40,
+                },
+              }}
+            >
               {/* <!-- ----------------------------- Article card ------------------------------ --> */}
-              <div className="card pt-2 p-0 gray-border border-0">
-                {/* <!-- -------------------------- image card -------------------------- --> */}
-                <div className="px-2">
-                  <div className="slide position-relative overflow-hidden rounded-3">
-                    <div className="carousel-item active">
-                      <img
-                        src="./assets/images/house-isolated-field-1.webp"
-                        className="d-block w-100"
-                        alt="property image"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                {/* <!-- ----------------------------- card body ----------------------------- --> */}
-                <div className="card-body">
-                  <div className="card-title">
-                    <p className="primary-color fw-semibold fs-5 text-capitalize">
-                      Business
-                    </p>
-                    <a href="#" className="text-decoration-none">
-                      <h4 className="gray-text-color fw-bold text-capitalize primary-color-hover">
-                        Skills That You Can Learn In The Real Estate Market
-                      </h4>
-                    </a>
-                  </div>
-                </div>
-
-                {/* <!-- ----------------------------- card footer ----------------------------- --> */}
-                <div className="card-footer bg-transparent">
-                  <div className="row p-3 px-1">
-                    {/* <!-- ----------------------------- profile row ----------------------------- --> */}
-                    <div className="d-flex flex-row col-7 gap-2">
-                      <div className="col-3 rounded-circle p-1">
+              <SwiperSlide>
+                <div className="h-100 card pt-2 p-0 gray-border border-0">
+                  {/* <!-- -------------------------- image card -------------------------- --> */}
+                  <div className="px-2">
+                    <div className="slide position-relative overflow-hidden rounded-3">
+                      <div className="carousel-item active">
                         <img
-                          src="./assets/images/5.jpg"
-                          alt="profile"
-                          className="rounded-circle w-100"
+                          src={houseIsolatedImg}
+                          className="d-block w-100"
+                          alt="property"
                         />
                       </div>
-                      <div className="col-8 h-100 d-flex align-items-end pt-3">
-                        <p className="text-capitalize gray-text-color">ali tufan</p>
+                    </div>
+                  </div>
+
+                  {/* <!-- ----------------------------- card body ----------------------------- --> */}
+                  <div className="card-body">
+                    <div className="card-title">
+                      <p className="primary-color fw-semibold fs-5 text-capitalize">
+                        Business
+                      </p>
+                      <Link to={"#"} className="text-decoration-none">
+                        <h4 className="gray-text-color fw-bold text-capitalize primary-color-hover">
+                          Skills That You Can Learn In The Real Estate Market
+                        </h4>
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* <!-- ----------------------------- card footer ----------------------------- --> */}
+                  <div className="card-footer bg-transparent">
+                    <div className="row p-3 px-1">
+                      {/* <!-- ----------------------------- profile row ----------------------------- --> */}
+                      <div className="d-flex flex-row col-7 gap-2">
+                        <div className="col-3 rounded-circle p-1">
+                          <img
+                            src={kate}
+                            alt="profile"
+                            className="rounded-circle w-100"
+                          />
+                        </div>
+                        <div className="col-8 h-100 d-flex align-items-end pt-3">
+                          <p className="text-capitalize gray-text-color">
+                            ali tufan
+                          </p>
+                        </div>
+                      </div>
+                      {/* <!-- --------------------------- posted time row --------------------------- --> */}
+                      <div className="d-flex col-5 align-items-end justify-content-end">
+                        <p className="p-0">7 August 2022</p>
                       </div>
                     </div>
-                    {/* <!-- --------------------------- posted time row --------------------------- --> */}
-                    <div className="d-flex col-5 align-items-end justify-content-end">
-                      <p className="p-0">7 August 2022</p>
-                    </div>
                   </div>
                 </div>
-              </div>
+              </SwiperSlide>
               {/* <!-- ----------------------------- Article card ------------------------------ --> */}
-              <div className="card pt-2 p-0 gray-border border-0">
-                {/* <!-- -------------------------- image card -------------------------- --> */}
-                <div className="px-2">
-                  <div className="slide position-relative overflow-hidden rounded-3">
-                    <div className="carousel-item active">
-                      <img
-                        src="./assets/images/9-characteristics-4.jpg"
-                        className="d-block w-100"
-                        alt="property image"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                {/* <!-- ----------------------------- card body ----------------------------- --> */}
-                <div className="card-body">
-                  <div className="card-title">
-                    <p className="primary-color fw-semibold fs-5 text-capitalize">
-                      Construction
-                    </p>
-                    <a href="#" className="text-decoration-none">
-                      <h4 className="gray-text-color fw-bold text-capitalize primary-color-hover">
-                        Bedroom Colors You will Never this Regret
-                      </h4>
-                    </a>
-                  </div>
-                </div>
-
-                {/* <!-- ----------------------------- card footer ----------------------------- --> */}
-                <div className="card-footer bg-transparent">
-                  <div className="row p-3 px-1">
-                    {/* <!-- ----------------------------- profile row ----------------------------- --> */}
-                    <div className="d-flex flex-row col-7 gap-2">
-                      <div className="col-3 rounded-circle p-1">
+              <SwiperSlide>
+                <div className="h-100 card pt-2 p-0 gray-border border-0">
+                  {/* <!-- -------------------------- image card -------------------------- --> */}
+                  <div className="px-2">
+                    <div className="slide position-relative overflow-hidden rounded-3">
+                      <div className="carousel-item active">
                         <img
-                          src="./assets/images/5.jpg"
-                          alt="profile"
-                          className="rounded-circle w-100"
+                          src={characteristicsImg}
+                          className="d-block w-100"
+                          alt="property"
                         />
                       </div>
-                      <div className="col-8 h-100 d-flex align-items-end pt-3">
-                        <p className="text-capitalize gray-text-color">ali tufan</p>
+                    </div>
+                  </div>
+
+                  {/* <!-- ----------------------------- card body ----------------------------- --> */}
+                  <div className="card-body">
+                    <div className="card-title">
+                      <p className="primary-color fw-semibold fs-5 text-capitalize">
+                        Construction
+                      </p>
+                      <Link to={"#"} className="text-decoration-none">
+                        <h4 className="gray-text-color fw-bold text-capitalize primary-color-hover">
+                          Bedroom Colors You will Never this Regret
+                        </h4>
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* <!-- ----------------------------- card footer ----------------------------- --> */}
+                  <div className="card-footer bg-transparent">
+                    <div className="row p-3 px-1">
+                      {/* <!-- ----------------------------- profile row ----------------------------- --> */}
+                      <div className="d-flex flex-row col-7 gap-2">
+                        <div className="col-3 rounded-circle p-1">
+                          <img
+                            src={kate}
+                            alt="profile"
+                            className="rounded-circle w-100"
+                          />
+                        </div>
+                        <div className="col-8 h-100 d-flex align-items-end pt-3">
+                          <p className="text-capitalize gray-text-color">
+                            ali tufan
+                          </p>
+                        </div>
+                      </div>
+                      {/* <!-- --------------------------- posted time row --------------------------- --> */}
+                      <div className="d-flex col-5 align-items-end justify-content-end">
+                        <p className="p-0">7 August 2022</p>
                       </div>
                     </div>
-                    {/* <!-- --------------------------- posted time row --------------------------- --> */}
-                    <div className="d-flex col-5 align-items-end justify-content-end">
-                      <p className="p-0">7 August 2022</p>
-                    </div>
                   </div>
                 </div>
-              </div>
+              </SwiperSlide>
               {/* <!-- ----------------------------- Article card ------------------------------ --> */}
-              <div className="card pt-2 p-0 gray-border border-0">
-                {/* <!-- -------------------------- image card -------------------------- --> */}
-                <div className="px-2">
-                  <div className="slide position-relative overflow-hidden rounded-3">
-                    <div className="carousel-item active">
-                      <img
-                        src="./assets/images/blog2-op5h9ukqohpvlj56kvz57kxf15eqhdeymxa36hjeck.jpg"
-                        className="d-block w-100"
-                        alt="property image"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                {/* <!-- ----------------------------- card body ----------------------------- --> */}
-                <div className="card-body">
-                  <div className="card-title">
-                    <p className="primary-color fw-semibold fs-5 text-capitalize">
-                      Business
-                    </p>
-                    <a href="#" className="text-decoration-none">
-                      <h4 className="gray-text-color fw-bold text-capitalize primary-color-hover">
-                        5 Essential Steps for Buying everyone Investment
-                      </h4>
-                    </a>
-                  </div>
-                </div>
-
-                {/* <!-- ----------------------------- card footer ----------------------------- --> */}
-                <div className="card-footer bg-transparent">
-                  <div className="row p-3 px-1">
-                    {/* <!-- ----------------------------- profile row ----------------------------- --> */}
-                    <div className="d-flex flex-row col-7 gap-2">
-                      <div className="col-3 rounded-circle p-1">
+              <SwiperSlide>
+                <div className="h-100 card pt-2 p-0 gray-border border-0">
+                  {/* <!-- -------------------------- image card -------------------------- --> */}
+                  <div className="px-2">
+                    <div className="slide position-relative overflow-hidden rounded-3">
+                      <div className="carousel-item active">
                         <img
-                          src="./assets/images/5.jpg"
-                          alt="profile"
-                          className="rounded-circle w-100"
+                          src={blogImg}
+                          className="d-block w-100"
+                          alt="property"
                         />
                       </div>
-                      <div className="col-8 h-100 d-flex align-items-end pt-3">
-                        <p className="text-capitalize gray-text-color">ali tufan</p>
-                      </div>
                     </div>
-                    {/* <!-- --------------------------- posted time row --------------------------- --> */}
-                    <div className="d-flex col-5 align-items-end justify-content-end">
-                      <p className="p-0">7 August 2022</p>
+                  </div>
+
+                  {/* <!-- ----------------------------- card body ----------------------------- --> */}
+                  <div className="card-body">
+                    <div className="card-title">
+                      <p className="primary-color fw-semibold fs-5 text-capitalize">
+                        Business
+                      </p>
+                      <Link to={"#"} className="text-decoration-none">
+                        <h4 className="gray-text-color fw-bold text-capitalize primary-color-hover">
+                          5 Essential Steps for Buying everyone Investment
+                        </h4>
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* <!-- ----------------------------- card footer ----------------------------- --> */}
+                  <div className="card-footer bg-transparent">
+                    <div className="row p-3 px-1">
+                      {/* <!-- ----------------------------- profile row ----------------------------- --> */}
+                      <div className="d-flex flex-row col-7 gap-2">
+                        <div className="col-3 rounded-circle p-1">
+                          <img
+                            src={kate}
+                            alt="profile"
+                            className="rounded-circle w-100"
+                          />
+                        </div>
+                        <div className="col-8 h-100 d-flex align-items-end pt-3">
+                          <p className="text-capitalize gray-text-color">
+                            ali tufan
+                          </p>
+                        </div>
+                      </div>
+                      {/* <!-- --------------------------- posted time row --------------------------- --> */}
+                      <div className="d-flex col-5 align-items-end justify-content-end">
+                        <p className="p-0">7 August 2022</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </SwiperSlide>
+            </Swiper>
+            <div className="row justify-content-center">
+              <div className="articles-swiper-pagination d-lg-none justify-content-center d-flex flex-row p-3 fs-2"></div>
             </div>
           </div>
         </div>
