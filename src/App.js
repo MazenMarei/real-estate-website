@@ -6,7 +6,6 @@ import CostumeFooter from "./components/shared/Footer/CustomFooter";
 import ScrollBtn from "./components/shared/ScrollBtn";
 import Page404 from "./components/pages/Page404";
 
-import Contact from "./components/pages/Contact/Contact";
 
 export default function App() {
   // * returning the JSX of App
