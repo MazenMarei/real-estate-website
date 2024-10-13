@@ -8,13 +8,10 @@ export default function ScrollBtn() {
 
   useEffect(() => {
     const handleScroll = () => {
-
       if (
         window.scrollY + document.documentElement.clientHeight >=
         document.documentElement.scrollHeight / 4
       ) {
-        console.log("visible after middle");
-
         setVisible(true);
         setAnimationClass("slide-and-fade-in");
       } else {
@@ -36,15 +33,22 @@ export default function ScrollBtn() {
   const handleClick = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
+    setTimeout(() => {
+      setAnimationClass("slide-and-fade-out");
+      setTimeout(() => {
+        setVisible(false);
+        setAnimationClass("");
+      }, 300);
+    }, 1000);
   };
   return (
     <button
       className={`btn secondary-bg rounded-circle scroll-up-btn position-fixed z-3 bottom-0 end-0 me-3 mb-3 ${
         visible ? animationClass : "d-none"
       }`}
-      onClick={handleClick} 
+      onClick={handleClick}
       id="scrollUpBtn"
     >
       <FontAwesomeIcon icon={faArrowUp} className="primary-color fs-3" />

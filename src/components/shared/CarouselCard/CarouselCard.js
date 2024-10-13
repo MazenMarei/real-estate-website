@@ -28,7 +28,6 @@ export default function CarouselCard({ title, description, image }) {
           spaceBetween={50}
           slidesPerView={1}
           loop={true}
-          onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => setSwiperMain(swiper)}
         >
           {/* ---------------------------- overlay colo div ---------------------------- */}
@@ -146,10 +145,10 @@ export default function CarouselCard({ title, description, image }) {
 
       <Card.Body>
         <Card.Title className="text-capitalize fw-bold">
-          <Link href="#" className="text-decoration-none">
+          <Link to="/about-us" className="text-decoration-none">
             <p className="primary-color fw-semibold fs-5">Family House</p>
           </Link>
-          <Link href="#" className="text-decoration-none">
+          <Link to="/about-us" className="text-decoration-none">
             <h4 className="gray-text-color fw-bold primary-color-hover">
               Eaton Garth Penthouse
             </h4>

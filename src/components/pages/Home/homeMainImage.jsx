@@ -1,4 +1,4 @@
-import mainHomeImage from "../assets/images/1.jpg";
+import mainHomeImage from "../../../assets/images/1.jpg";
 
 
 

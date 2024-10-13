@@ -14,9 +14,13 @@ export default function CostumeFooter() {
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
+    
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
+      setTimeout(() => {
+        setValidated(false);
+      }, 3000);
     }
 
     setValidated(true);
@@ -47,43 +51,43 @@ export default function CostumeFooter() {
               <ul className="list-unstyled">
                 <li className="mb-3">
                   <Link
-                    to="./about"
+                    to="./about-us"
                     className="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
                   >
                     about us
                   </Link>
                 </li>
                 <li className="mb-3">
-                  <a
-                    href="#"
+                  <Link
+                    to={"#"}
                     className="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
                   >
                     terms & conditions
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-3">
-                  <a
-                    href="#"
+                  <Link
+                    to={"#"}
                     className="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
                   >
                     user's guide
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-3">
-                  <a
-                    href="#"
+                  <Link
+                    to={"#"}
                     className="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
                   >
                     support center
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-3">
-                  <a
-                    href="#"
+                  <Link
+                    to={"#"}
                     className="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
                   >
                     press info
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -240,20 +244,20 @@ export default function CostumeFooter() {
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to={"#"}
                       className="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
                     >
                       listing
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to={"#"}
                       className="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
                     >
                       property
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <a
@@ -264,20 +268,20 @@ export default function CostumeFooter() {
                     </a>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to={"#"}
                       className="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
                     >
                       blog
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to={"#"}
                       className="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
                     >
                       contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

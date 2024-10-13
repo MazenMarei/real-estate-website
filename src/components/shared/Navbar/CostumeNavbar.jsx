@@ -1,19 +1,33 @@
 import { Nav, Navbar } from "react-bootstrap";
 import whiteLogo from "../../../assets/images/white-logo.png";
 import logo from "../../../assets/images/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 export default function CostumeNavbar() {
-  // * returning the JSX of Navbar
+  const location = useLocation();
+  const [home, setHome] = useState(false);
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setHome(true);
+    } else {
+      setHome(false);
+    }
+  }, [location]);
+
   return (
     <>
       <Navbar
         expand="lg"
         id="navbar"
-        className="navbar-dark z-3 w-100 top-0 home-navbar position-sticky p-3 px-5 position-sticky top-0 bg-white"
+        className={`navbar-dark z-3 w-100 top-0 ${
+          home ? "home-navbar " : "shadow-sm"
+        } position-sticky p-3 px-5 position-sticky top-0 bg-white`}
       >
         {/* --------------------- navbar brand for large devices --------------------- */}
 
-        <Navbar.Brand className="align-middle d-lg-block d-none">
+        <Navbar.Brand
+          className={`align-middle ${home ? "d-lg-block" : ""} d-none`}
+        >
           <Link to="./" className="text-decoration-none text-white">
             <img src={whiteLogo} alt="logo" />
             <span className="align-bottom fs-4 fw-bold"> FindHouse </span>
@@ -21,7 +35,7 @@ export default function CostumeNavbar() {
         </Navbar.Brand>
 
         {/* --------------------- navbar brand for small devices --------------------- */}
-        <Navbar.Brand className="align-middle d-lg-none">
+        <Navbar.Brand className={`align-middle ${home ? "d-lg-none" : ""} `}>
           <Link to="./" className="text-decoration-none">
             <img src={logo} alt="logo" />
             <span className="align-bottom fs-4 fw-bold gray-text-color">
@@ -87,7 +101,7 @@ export default function CostumeNavbar() {
               <li className="nav-item">
                 <Link
                   className="nav-link dark-secondary-color primary-color-hover"
-                  to="./about"
+                  to={"/about-us"}
                 >
                   about us
                 </Link>
