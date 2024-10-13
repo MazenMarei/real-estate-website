@@ -7,6 +7,8 @@ import {
   faPinterest,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { Form } from "react-bootstrap";
 import { useState } from "react";
 export default function CostumeFooter() {
@@ -14,13 +16,20 @@ export default function CostumeFooter() {
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
-    
+
+    event.preventDefault();
+    event.stopPropagation();
     if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
       setTimeout(() => {
         setValidated(false);
       }, 3000);
+    } else {
+      toast.success("Subscribed to site news!!", {
+        closeOnClick: true,
+        pauseOnHover: true,
+      });
+      event.target.reset();
+      return setValidated(true);
     }
 
     setValidated(true);
