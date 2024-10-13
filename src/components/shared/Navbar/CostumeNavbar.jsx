@@ -90,12 +90,12 @@ export default function CostumeNavbar() {
               </li>
               {/* <!-- ------------------------------ nav item ------------------------------- --> */}
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link dark-secondary-color primary-color-hover"
-                  href="#contact"
+                  to={"/contact-us"}
                 >
                   blog
-                </a>
+                </Link>
               </li>
               {/* <!-- ------------------------------ nav item ------------------------------- --> */}
               <li className="nav-item">
@@ -108,12 +108,12 @@ export default function CostumeNavbar() {
               </li>
               {/* <!-- ------------------------------ nav item ------------------------------- --> */}
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link dark-secondary-color primary-color-hover"
-                  href="#contact"
+                  to={"/contact-us"}
                 >
                   contact us
-                </a>
+                </Link>
               </li>
             </ul>
           </Nav>

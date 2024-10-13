@@ -277,7 +277,7 @@ export default function CostumeFooter() {
                   </li>
                   <li>
                     <Link
-                      to={"#"}
+                      to={"./contact-us"}
                       className="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
                     >
                       contact
