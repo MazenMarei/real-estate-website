@@ -12,11 +12,24 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
-import profileImage from "../../../assets/images/6-150x150.jpg";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-export default function CarouselCard({ title, description, image }) {
+export default function CarouselCard({
+  type,
+  title,
+  sellType,
+  location,
+  locationLink,
+  price,
+  beds,
+  bath,
+  sqft,
+  image,
+  author,
+  authorImage,
+  postedTime,
+}) {
   const [swiperMain, setSwiperMain] = useState(null);
   const [savedToFavorite, setSavedToFavorite] = useState(false);
   const [saveTocompare, setSaveTocompare] = useState(false);
@@ -63,14 +76,15 @@ export default function CarouselCard({ title, description, image }) {
                 <p className="mb-0">featured</p>
               </div>
               <div className="col text-capitalize rounded rounded-1 py-1 primary-bg px-3">
-                <p className="m-0">for rent</p>
+                <p className="m-0">{sellType}</p>
               </div>
             </div>
 
             <div className="container position-absolute bottom-0 z-1 w-100">
               <div className="row justify-content-start pb-2 gap-4 align-items-center">
                 <h3 className="col-6 col-sm-6 my-auto col-lg-7 text-white fw-bold align-bottom align-items-center">
-                  $1300<span className="fs-5">/mo</span>
+                  ${price}
+                  <span className="fs-5">/mo</span>
                 </h3>
 
                 <div className="col-4 d-flex flex-row justify-content-end gap-2">
@@ -146,25 +160,28 @@ export default function CarouselCard({ title, description, image }) {
       <Card.Body>
         <Card.Title className="text-capitalize fw-bold">
           <Link to="/about-us" className="text-decoration-none">
-            <p className="primary-color fw-semibold fs-5">Family House</p>
+            <p className="primary-color fw-semibold fs-5">{type}</p>
           </Link>
           <Link to="/about-us" className="text-decoration-none">
             <h4 className="gray-text-color fw-bold primary-color-hover">
-              Eaton Garth Penthouse
+              {title}
             </h4>
           </Link>
 
-          <div className="d-flex flex-row gap-1 align-items-center text-center">
+          <div className="d-flex flex-row gap-1 align-items-center text-center primary-color-hover">
             <FontAwesomeIcon icon={faLocationDot} />
-            <p className="gray-text-color my-auto fs-6 fw-medium">
-              1421 San Pedro St, Los Angeles, CA 900015
-            </p>
+            <Link
+              to={locationLink}
+              className="gray-text-color my-auto fs-6 fw-medium text-decoration-none primary-color-hover"
+            >
+              {location}
+            </Link>
           </div>
 
           <div className="flex-row d-flex gap-5 mt-3 ps-1">
-            <p className="fs-6 fw-medium">Beds: 1</p>
-            <p className="fs-6 fw-medium">Bath: 1</p>
-            <p className="fs-6 fw-medium">SqFt: 8280</p>
+            <p className="fs-6 fw-medium">Beds: {beds}</p>
+            <p className="fs-6 fw-medium">Bath: {bath}</p>
+            <p className="fs-6 fw-medium">SqFt: {sqft}</p>
           </div>
         </Card.Title>
       </Card.Body>
@@ -174,18 +191,18 @@ export default function CarouselCard({ title, description, image }) {
           <div className="d-flex flex-row col-8 gap-2">
             <div className="col-3 rounded-circle p-1">
               <img
-                src={profileImage}
+                src={authorImage}
                 alt="profile"
                 className="rounded-circle w-100"
               />
             </div>
             <div className="col-8 h-100 d-flex align-items-end pt-3">
-              <p className="text-capitalize gray-text-color">kate john</p>
+              <p className="text-capitalize gray-text-color">{author}</p>
             </div>
           </div>
 
           <div className="d-flex col-4 align-items-end justify-content-end">
-            <p className="p-0">1 day ago</p>
+            <p className="p-0">{postedTime}</p>
           </div>
         </div>
       </Card.Footer>

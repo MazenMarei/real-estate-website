@@ -149,7 +149,7 @@ export default function CostumeFooter() {
               <ul className="list-unstyled flex-row d-flex gap-4">
                 <li className="mb-3">
                   <a
-                    href="mailto:info@findhouse.com"
+                    href="https://www.facebook.com/"
                     className="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
                   >
                     <FontAwesomeIcon icon={faFacebook} className="fs-5" />
@@ -157,7 +157,7 @@ export default function CostumeFooter() {
                 </li>
                 <li className="mb-3">
                   <a
-                    href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                    href="https://x.com/?lang=en"
                     className="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
                   >
                     <FontAwesomeIcon icon={faTwitter} className="fs-5" />
@@ -165,7 +165,7 @@ export default function CostumeFooter() {
                 </li>
                 <li className="mb-3">
                   <a
-                    href="https://maps.app.goo.gl/Meojq2NbvPpwNX6F7"
+                    href="https://www.instagram.com/"
                     className="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
                   >
                     <FontAwesomeIcon icon={faInstagram} className="fs-5" />
@@ -173,7 +173,7 @@ export default function CostumeFooter() {
                 </li>
                 <li className="mb-3">
                   <a
-                    href="tel:+1 246-345-0699"
+                    href="https://www.pinterest.com/"
                     className="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
                   >
                     <FontAwesomeIcon icon={faPinterest} className="fs-5" />
@@ -181,7 +181,7 @@ export default function CostumeFooter() {
                 </li>
                 <li className="mb-3">
                   <a
-                    href="tel:+1 246-345-0695"
+                    href="/"
                     className="white-hover light-gray-text-color text-decoration-none text-capitalize fw-semibold"
                   >
                     <FontAwesomeIcon icon={faGlobe} className="fs-5" />
@@ -237,7 +237,7 @@ export default function CostumeFooter() {
                 <ul className="list-unstyled d-flex flex-md-row flex-sm-column flex-column gap-4 my-auto">
                   <li>
                     <a
-                      href="./index.html"
+                      href="./"
                       className="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
                     >
                       home
@@ -261,7 +261,7 @@ export default function CostumeFooter() {
                   </li>
                   <li>
                     <a
-                      href="./about-us.html"
+                      href="./about-us"
                       className="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
                     >
                       about us

@@ -5,6 +5,186 @@ import "swiper/css/pagination";
 
 import image from "../../../assets/images/8-850x550.jpg";
 import CarouselCard from "../../shared/CarouselCard/CarouselCard";
+import profileImage from "../../../assets/images/6-150x150.jpg";
+
+const properties = [
+  {
+    id: 1,
+    image: image,
+    type: "Family House",
+    title: "Eaton Garth Penthouse",
+    sellType: "for rent",
+    location: "1421 San Pedro St, Los Angeles, CA 900015",
+    locationLink: "https://maps.app.goo.gl/Meojq2NbvPpwNX6F7",
+    price: 1300,
+    beds: 1,
+    bath: 1,
+    sqft: 8280,
+    author: "kate john",
+    authorImage: profileImage,
+    postedTime: "1 day ago",
+  },
+  {
+    id: 2,
+    image: image,
+    type: "Family House",
+    title: "Eaton Garth Penthouse",
+    sellType: "for rent",
+    location: "1421 San Pedro St, Los Angeles, CA 900015",
+    locationLink: "https://maps.app.goo.gl/Meojq2NbvPpwNX6F7",
+    price: 1300,
+    beds: 1,
+    bath: 1,
+    sqft: 8280,
+    author: "kate john",
+    authorImage: profileImage,
+    postedTime: "1 day ago",
+  },
+  {
+    id: 3,
+    image: image,
+    type: "Family House",
+    title: "Eaton Garth Penthouse",
+    sellType: "for rent",
+    location: "1421 San Pedro St, Los Angeles, CA 900015",
+    locationLink: "https://maps.app.goo.gl/Meojq2NbvPpwNX6F7",
+    price: 1300,
+    beds: 1,
+    bath: 1,
+    sqft: 8280,
+    author: "kate john",
+    authorImage: profileImage,
+    postedTime: "1 day ago",
+  },
+  {
+    id: 4,
+    image: image,
+    type: "Family House",
+    title: "Eaton Garth Penthouse",
+    sellType: "for rent",
+    location: "1421 San Pedro St, Los Angeles, CA 900015",
+    locationLink: "https://maps.app.goo.gl/Meojq2NbvPpwNX6F7",
+    price: 1300,
+    beds: 1,
+    bath: 1,
+    sqft: 8280,
+    author: "kate john",
+    authorImage: profileImage,
+    postedTime: "1 day ago",
+  },
+  {
+    id: 5,
+    image: image,
+    type: "Family House",
+    title: "Eaton Garth Penthouse",
+    sellType: "for rent",
+    location: "1421 San Pedro St, Los Angeles, CA 900015",
+    locationLink: "https://maps.app.goo.gl/Meojq2NbvPpwNX6F7",
+    price: 1300,
+    beds: 1,
+    bath: 1,
+    sqft: 8280,
+    author: "kate john",
+    authorImage: profileImage,
+    postedTime: "1 day ago",
+  },
+  {
+    id: 6,
+    image: image,
+    type: "Family House",
+    title: "Eaton Garth Penthouse",
+    sellType: "for rent",
+    location: "1421 San Pedro St, Los Angeles, CA 900015",
+    locationLink: "https://maps.app.goo.gl/Meojq2NbvPpwNX6F7",
+    price: 1300,
+    beds: 1,
+    bath: 1,
+    sqft: 8280,
+    author: "kate john",
+    authorImage: profileImage,
+    postedTime: "1 day ago",
+  },
+  {
+    id: 7,
+    image: image,
+    type: "Family House",
+    title: "Eaton Garth Penthouse",
+    sellType: "for rent",
+    location: "1421 San Pedro St, Los Angeles, CA 900015",
+    locationLink: "https://maps.app.goo.gl/Meojq2NbvPpwNX6F7",
+    price: 1300,
+    beds: 1,
+    bath: 1,
+    sqft: 8280,
+    author: "kate john",
+    authorImage: profileImage,
+    postedTime: "1 day ago",
+  },
+  {
+    id: 8,
+    image: image,
+    type: "Family House",
+    title: "Eaton Garth Penthouse",
+    sellType: "for rent",
+    location: "1421 San Pedro St, Los Angeles, CA 900015",
+    locationLink: "https://maps.app.goo.gl/Meojq2NbvPpwNX6F7",
+    price: 1300,
+    beds: 1,
+    bath: 1,
+    sqft: 8280,
+    author: "kate john",
+    authorImage: profileImage,
+    postedTime: "1 day ago",
+  },
+  {
+    id: 9,
+    image: image,
+    type: "Family House",
+    title: "Eaton Garth Penthouse",
+    sellType: "for rent",
+    location: "1421 San Pedro St, Los Angeles, CA 900015",
+    locationLink: "https://maps.app.goo.gl/Meojq2NbvPpwNX6F7",
+    price: 1300,
+    beds: 1,
+    bath: 1,
+    sqft: 8280,
+    author: "kate john",
+    authorImage: profileImage,
+    postedTime: "1 day ago",
+  },
+  {
+    id: 10,
+    image: image,
+    type: "Family House",
+    title: "Eaton Garth Penthouse",
+    sellType: "for rent",
+    location: "1421 San Pedro St, Los Angeles, CA 900015",
+    locationLink: "https://maps.app.goo.gl/Meojq2NbvPpwNX6F7",
+    price: 1300,
+    beds: 1,
+    bath: 1,
+    sqft: 8280,
+    author: "kate john",
+    authorImage: profileImage,
+    postedTime: "1 day ago",
+  },
+  {
+    id: 11,
+    image: image,
+    type: "Family House",
+    title: "Eaton Garth Penthouse",
+    sellType: "for rent",
+    location: "1421 San Pedro St, Los Angeles, CA 900015",
+    locationLink: "https://maps.app.goo.gl/Meojq2NbvPpwNX6F7",
+    price: 1300,
+    beds: 1,
+    bath: 1,
+    sqft: 8280,
+    author: "kate john",
+    authorImage: profileImage,
+    postedTime: "1 day ago",
+  },
+];
 
 export default function FeaturedProperties() {
   return (
@@ -44,15 +224,19 @@ export default function FeaturedProperties() {
           }}
         >
           <div className="row">
-            {[1, 2, 3, 4, 5, 6].map((item, index) => (
-              <SwiperSlide key={index}>
+            {properties.map((property, index) => (
+              <SwiperSlide key={property.id}>
                 <div className="p-4 p-md-0">
-                  <CarouselCard image={image} />
+                  <CarouselCard {...property} />
                 </div>
               </SwiperSlide>
             ))}
           </div>
-          <div className="row justify-content-center">
+          <div
+            className={`row justify-content-center ${
+              properties.length > 3 ? "" : "d-lg-none"
+            }`}
+          >
             <div className="home-swiper-pagination justify-content-center d-flex flex-row p-3 fs-2"></div>
           </div>
         </Swiper>
