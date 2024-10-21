@@ -1,0 +1,43 @@
+import { Router } from "express";
+import usersModal from "../models/users";
+import { compareSync } from "bcrypt";
+import { sign } from "jsonwebtoken";
+import { date } from "joi";
+const router = Router();
+
+module.exports = {
+  route: "/login",
+  router: router,
+  func: () => {
+    router.post("/", async (req: any, res: any) => {
+      console.log(req.body);
+
+      const user = await usersModal.User.findOne({ email: req.body.email });
+      if (!user) return res.status(400).send({ message: "Invalid Credential" });
+      const validPassword = compareSync(req.body.password, user.password);
+      if (!validPassword)
+        return res.status(400).send({ message: "Invalid Credential" });
+      console.log(user);
+
+      const token = sign(
+        { _id: user._id, email: user.email, role: user.role },
+        process.env.JWT_SECRET!,
+        { expiresIn: "7d" }
+      );
+      console.log(token);
+
+      res.status(200).send({
+        message: "Login successful",
+        token: token,
+        user: {
+          profileImage: user.profileImage,
+          favorites: user.favorites,
+          name: user.name,
+          role: user.role,
+          email: user.email,
+          date: user.date,
+        },
+      });
+    });
+  },
+};
