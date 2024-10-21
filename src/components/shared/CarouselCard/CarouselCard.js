@@ -14,6 +14,7 @@ import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
 
 export default function CarouselCard({
   type,
@@ -119,6 +120,11 @@ export default function CarouselCard({
                     onClick={() => {
                       setSavedToFavorite(!savedToFavorite);
                       if (!savedToFavorite) {
+                        axios.post("/api/addToFavorites", { id: 1 } , {
+                          headers: {
+                            Authorization: `Bearer ${localStorage.getItem("token")}`,
+                          },
+                        });
                         toast.success("Added to favorites", {
                           closeOnClick: true,
                           pauseOnHover: true,

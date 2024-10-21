@@ -26,6 +26,8 @@
 
   --darker-secondary: rgb(20, 30, 47);
 
+  --dark-primary: rgb(44, 11, 14);
+  
   --overlay-dark: rgba(36, 50, 74, 0.65);
   --overlay-lighter-dark: rgba(62, 76, 102, 0.4);
 
@@ -69,3 +71,6 @@
 
 /* end of the home page */
 
+.none-active-dropdown > a:active {
+  background-color:  white !important;
+}

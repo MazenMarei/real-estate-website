@@ -10,13 +10,10 @@
       height: 200px !important;
     }
   }
-  
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
-  
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -29,16 +26,26 @@
   .home-navbar div:first-child {
     background-color: transparent !important;
   }
-  .home-navbar ul li a {
+  .home-navbar ul li > a {
     color: white !important;
   }
 
+  .home-navbar ul li button,
+  .home-navbar ul li > svg {
+    color: white !important;
+  }
   #homeFindPropertyInCities {
     .city-card {
       height: 300px !important;
     }
   }
-
+  .left-small-border {
+    border-left: 1px solid #77777767 !important;
+    height: fit-content !important;
+  }
+  .text-lg-white {
+    color: white !important;
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */

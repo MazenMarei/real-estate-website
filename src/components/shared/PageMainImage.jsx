@@ -1,10 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function PageMainImage({ image, title }) {
   const location = useLocation();
-  console.log();
 
   return (
     <section id="aboutUsMainImage">
@@ -20,27 +19,35 @@ export default function PageMainImage({ image, title }) {
         <div className="position-absolute top-50 translate-middle start-50 container">
           <div className="row">
             <div className="d-flex flex-row align-items-center gap-1 mb-3">
-              <a
-                href="./index.html"
-                className="text-decoration-none primary-color text-capitalize fw-semibold"
+              <Link
+                to="/"
+                className="text-decoration-none primary-color text-decoration-underline text-capitalize fw-semibold"
               >
                 home
-              </a>
+              </Link>
               {location.pathname.split("/").map((item, index) => {
                 if (item === "") return null;
                 return (
-                  <>
-                    <FontAwesomeIcon
-                      icon={faAngleRight}
-                      className="text-white"
-                    />
-                    <p
-                      href="#"
-                      className="text-decoration-none text-white text-capitalize fw-semibold m-0"
+                    <div
+                      key={index}
+                      className="d-flex flex-row justify-content-center align-items-center"
                     >
-                      {item.replaceAll("-", " ")}
-                    </p>
-                  </>
+                      <FontAwesomeIcon
+                        icon={faAngleRight}
+                        className="text-white me-1"
+                      />
+                      {location.pathname.split("/").length - 1 === index ? (
+                        <p className="text-decoration-none text-white text-capitalize fw-semibold m-0">
+                          {item.replaceAll("-", " ")}
+                        </p>
+                      ) : (
+                        <Link
+                        to={`/${item}`}
+                         className={`text-decoration-none primary-color text-decoration-underline text-capitalize fw-semibold m-0`} >
+                          {item.replaceAll("-", " ")}
+                        </Link>
+                      )}
+                    </div>
                 );
               })}
             </div>

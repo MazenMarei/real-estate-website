@@ -33,6 +33,10 @@
   color: var(--darker-secondary) !important;
 }
 
+.dark-primary-color {
+  color: var(--dark-primary) !important;
+}
+
 .overlay-dark-color {
   color: var(--overlay-dark) !important;
 }
@@ -128,7 +132,6 @@
     color: white !important;
     transition: all 1.5s;
   }
-
 }
 .primary-bg-hover {
   transition: all 0.5s;
@@ -195,4 +198,13 @@
   -webkit-backface-visibility: visible;
   transition: opacity 0.2s ease;
   border-radius: 30px;
+}
+
+.text-lg-white {
+  color : black !important;
+}
+
+.dropdown-menu[data-bs-popper] {
+  right: 0 !important;
+  left: auto !important;
 }
