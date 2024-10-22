@@ -1,0 +1,135 @@
+/* importing Nunito font from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* importing the animation.css file */
+@import url("./animation.css");
+
+/* setting the font family */
+* {
+font-family: "Nunito", sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root {
+--primary: rgb(255, 90, 95);
+--secondary: rgb(36, 50, 74);
+--light-secondary: rgb(62, 76, 102);
+--light-primary: rgb(255, 120, 124);
+--lighter-primary: rgb(255, 232, 233);
+--lighter-secondary: rgb(138, 153, 179);
+--dark-secondary: rgb(29, 41, 62);
+--darker-secondary: rgb(20, 30, 47);
+--overlay-dark: rgba(36, 50, 74, 0.65);
+--overlaay-lighter-dark: rgba(62, 76, 102, 0.4);
+--gray-text: rgb(72, 72, 72);
+--light-gray-text: rgb(138, 153, 179);
+--black-50-bg: rgba(15, 21, 31, 0.5);
+}
+
+
+/* star blog */
+
+.blog{
+background-color:#F7F7F7;
+padding-bottom: 50px;
+}
+.blog .breadcrumb a{
+text-decoration: none;
+color: #484848;
+}
+
+.blog .row .p-card{
+margin: 10px;
+max-width: 25em;
+border-radius: 15px;
+background-color: white;
+box-sizing: border-box;
+padding: 0;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 7%);
+transition: 0.6s;
+}
+.blog .row .p-card:hover{
+transform: scale(1.03);
+}
+.blog .row .p-card .image{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+width: 100%;
+overflow: hidden;
+padding: 10px;
+}
+.blog .row .p-card .image img{
+border-radius: 10px;
+width: 100%;
+height: auto; /* Maintains the image's aspect ratio */
+display: block;
+}
+
+.blog .row .p-card .image .label{
+background-color: #ff5a5e;
+position: absolute;
+border-radius: 5px;
+padding: 4px ;
+transform: translate(-11.4em,-8.0em);
+font-size: 0.8em;
+
+}
+.blog .row .p-card .image .offer{
+background-color: whitesmoke;
+opacity: 0.7;
+}
+
+.blog .row .p-card .content{
+margin: 20px;
+}
+.blog .row .p-card .content h4{ 
+font-weight: bold;
+font-size: 20px;
+}
+.blog .row .p-card .content h6{
+color: #777;
+position: relative;
+}
+.blog .row .p-card .content .spicial::after{
+content: "";
+position: absolute;
+width: 110%;
+bottom: -100%;
+left: 50%;
+border-bottom: 1px solid #777777;
+opacity: 30%;
+transform: translatex(-50%);
+}
+.blog .row .p-card .content .ali{
+color: #777;
+padding-top: 20px;
+margin: 10px;
+}
+.blog .row .p-card .content .more{
+color:#ff5a5e ;
+position: relative;
+}
+.blog .row .p-card .content .more:hover::after{
+margin-left: 5px;
+transition: all 0.5s;
+}
+.blog .row .p-card .content .more::after{
+content: "";
+position: absolute;
+left: 101%;
+top: 34%;
+width: 8px;
+height: 8px;
+border-left: 2px solid #ff5a5e;
+border-top: 2px solid #ff5a5e;
+transform: rotate(137deg);
+transition: all 0.5s;
+}
+
+
+/* end blog  */
