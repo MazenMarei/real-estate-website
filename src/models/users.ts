@@ -9,6 +9,7 @@ export interface IUser {
   date: Date;
   profileImage: string;
   favorites: string[];
+  messages: string[];
   _id: string;
   phone: string;
   address: string;
@@ -52,6 +53,12 @@ const userSchema = new mongoose.Schema({
       type: mongoose.Schema.Types.ObjectId,
       ref: "properties",
     },
+  ],
+  messages: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "messages",
+    }
   ],
   phone: {
     type: String,
