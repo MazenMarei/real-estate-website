@@ -1,63 +1,70 @@
+# Getting Started with Create React App
 
- # Real Estate Website
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Overview
+## Available Scripts
 
-***A real estate website task from depi***
+In the project directory, you can run:
 
-This is a front-end project for a real estate website built using Bootstrap and some of cusomte css. The website provides a user-friendly interface for browsing and searching for properties. It includes various sections such as property listings, and contact forms.
+### `npm start`
 
-You can visit our site using this link : 
-https://mazenmarei.github.io/real-estate-website/
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Features
-- **Responsive Design**: The website is fully responsive and works on all devices (desktops, tablets, and mobile phones).
-- **Property Listings**: Users can browse through a list of properties with images, descriptions, and prices.
-- **Agent Profiles**: Information about real estate agents including their contact details.
-- **Contact Form**: A form for users to get in touch with the real estate agency.
-- **Navigation Bar**: A fixed navigation bar for easy access to different sections of the website.
+### `npm test`
 
-## Technologies Used
-- **HTML5**: For the structure of the website.
-- **CSS5**: For styling the website.
-- **Bootstrap 5**: For responsive design and pre-built components.
-- **JavaScript/jQuery**: For interactive elements and functionality.
-- **OwlCarousel2** : For a beautiful responsive carousel slider.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run build`
 
-## Installation
-To run this project locally, follow these steps:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-1. **Clone the repository**:
-    ```sh
-    git clone https://github.com/MazenMarei/real-estate-website.git
-    ```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-2. **Navigate to the project directory**:
-    ```sh
-    cd real-estate-website
-    ```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-3. **Open `index.html` in your browser**:
-    ```sh
-    start index.html
-    ```
+### `npm run eject`
 
-## Usage
-- **Home Page**: Displays featured properties, Our Partners , Articles & Tips , why choose us , Find Property in Cities.
-- **Property Listings**: Browse through available properties with detailed information.
-- **Contact Form**: Fill out the form to contact the real estate agency.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## Screenshots
-![Home Page](https://cdn.discordapp.com/attachments/1278084963107082310/1280188841160085545/screencapture-127-0-0-1-5500-index-html-2024-09-02-18_31_27.png?ex=66d92684&is=66d7d504&hm=871cad65cd7f57207bc2d6959adcc49c6b5b26f10cb19f35fa5e33d2b43f2836&)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## Contributors  
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-- [Mazen Marei Hassan](https://github.com/MazenMarei)
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
----
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-Thank you for visiting our real estate website git repository!
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
