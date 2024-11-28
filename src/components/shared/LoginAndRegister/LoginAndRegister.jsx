@@ -83,6 +83,7 @@ export default function LoginAndRegister({
     dispatch(setLoading(false));
   };
 
+  // login and register modal
   return (
     <Modal
       show={show}
@@ -91,15 +92,25 @@ export default function LoginAndRegister({
       centered={true}
       dialogClassName=""
     >
+
       <Modal.Body>
+
+
         {loading && <Loading />}
+
         <div className="container">
+
           <div className="row">
+
+            {/* /* ----------------- left side image for login and register ----------------- */}
             <div className="col d-none d-lg-block">
               <img src={loginForm ? bgLogin : bgRegister} alt="bgLogin" />
             </div>
+            {/* /* --------------- right side form for login and register form -------------- */}
             <div className="col d-flex flex-column ">
+
               <div className="row pt-3 d-flex flex-row justify-content-between align-items-center">
+                {/* /* ------------------------------- form title ------------------------------- */}
                 <h3 className="text-capitalize fs-4 col secondary-color">
                   {loginForm ? "Login" : "Register"}
                 </h3>
@@ -116,6 +127,8 @@ export default function LoginAndRegister({
                   />
                 </button>
               </div>
+
+              {/* /* ---------------------- display if there is an error ---------------------- */}
               {errorMessage && (
                 <div className="row my-3 p-3 light-primary-bg rounded rounded-3">
                   <div className="col">
@@ -125,6 +138,8 @@ export default function LoginAndRegister({
                   </div>
                 </div>
               )}
+
+              {/* /* ------------------------------- form body and inputs  ------------------------------- */}
               <div className="row my-auto">
                 <Form
                   validated={validated}

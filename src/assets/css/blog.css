@@ -1,0 +1,72 @@
+/* importing Nunito font from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* importing the animation.css file */
+@import url("./animation.css");
+
+/* setting the font family */
+* {
+font-family: "Nunito", sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root {
+--primary: rgb(255, 90, 95);
+--secondary: rgb(36, 50, 74);
+--light-secondary: rgb(62, 76, 102);
+--light-primary: rgb(255, 120, 124);
+--lighter-primary: rgb(255, 232, 233);
+--lighter-secondary: rgb(138, 153, 179);
+--dark-secondary: rgb(29, 41, 62);
+--darker-secondary: rgb(20, 30, 47);
+--overlay-dark: rgba(36, 50, 74, 0.65);
+--overlaay-lighter-dark: rgba(62, 76, 102, 0.4);
+--gray-text: rgb(72, 72, 72);
+--light-gray-text: rgb(138, 153, 179);
+--black-50-bg: rgba(15, 21, 31, 0.5);
+}
+
+
+/* star blog */
+
+.blog .row .p-card{
+max-width: 25em;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 7%);
+transition: 0.6s;
+}
+
+.blog .row .p-card:hover{
+transform: scale(1.03);
+}
+
+.blog .row .p-card .image{
+cursor: pointer;
+}
+
+.blog .row .p-card .image .label{
+transform: translate(-11.4em,-8.0em);
+font-size: 0.8em;
+}
+
+.blog .row .p-card .content .more:hover::after{
+margin-left: 5px;
+transition: all 0.5s;
+}
+
+.blog .row .p-card .content .more::after{
+content: "";
+position: absolute;
+left: 101%;
+top: 34%;
+width: 8px;
+height: 8px;
+border-left: 2px solid #ff5a5e;
+border-top: 2px solid #ff5a5e;
+transform: rotate(137deg);
+transition: all 0.5s;
+}
+
+
+/* end blog  */

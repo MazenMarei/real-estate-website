@@ -1,8 +1,4 @@
 import HomeMainImage from "./homeMainImage";
-
-import { ToastContainer } from "react-toastify";
-// import required modules
-
 import OurPartners from "../../shared/OurPartners";
 import FeaturedProperties from "./featuredProperties";
 import FindPropertyInCities from "./FindPropertyInCities";
@@ -12,10 +8,8 @@ import HomeArticls from "./HomeArticls";
 export default function Home() {
   return (
     <>
-      <ToastContainer />
-
       {/* <!-- ----------------------------- Main Image ----------------------------- --> */}
-      
+
       <HomeMainImage />
 
       {/* <!-- ----------------------------- Featured Properties ----------------------------- --> */}
@@ -37,7 +31,6 @@ export default function Home() {
       {/* <!-- ------------------------ Our Partners Section ------------------------- --> */}
 
       <OurPartners />
-
     </>
   );
 }

@@ -7,7 +7,9 @@ export default function PageMainImage({ image, title }) {
 
   return (
     <section id="aboutUsMainImage">
+
       <div className="container-fluid p-0 position-relative w-100 justify-content-center">
+
         <div className="position-relative overflow-hidden h-100 overflow-hidden">
           <img
             src={image}
@@ -15,16 +17,22 @@ export default function PageMainImage({ image, title }) {
             className="img-fluid w-100"
           />
         </div>
+
         <div className="overlay-dark-bg h-100 w-100 position-absolute top-0"></div>
+
         <div className="position-absolute top-50 translate-middle start-50 container">
+
           <div className="row">
+
             <div className="d-flex flex-row align-items-center gap-1 mb-3">
+              
               <Link
                 to="/"
                 className="text-decoration-none primary-color text-decoration-underline text-capitalize fw-semibold"
               >
                 home
               </Link>
+
               {location.pathname.split("/").map((item, index) => {
                 if (item === "") return null;
                 return (
@@ -50,11 +58,15 @@ export default function PageMainImage({ image, title }) {
                     </div>
                 );
               })}
+
             </div>
+
+            
             <h1 className="text-white fw-bold fs-1 text-capitalize">
               {title ??
                 location.pathname.replaceAll("/", "").replaceAll("-", " ")}
             </h1>
+
           </div>
         </div>
       </div>

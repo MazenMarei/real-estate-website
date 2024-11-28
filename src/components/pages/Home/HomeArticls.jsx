@@ -10,6 +10,7 @@ import blogImg from "../../../assets/images/blog2-op5h9ukqohpvlj56kvz57kxf15eqhd
 import kate from "../../../assets/images/6.jpg";
 import ArticleCard from "../../shared/ArticleCard/ArticleCard";
 
+/// Articles array data
 const articles = [
   {
     id: 1,

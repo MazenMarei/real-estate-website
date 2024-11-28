@@ -262,7 +262,7 @@ export default function CostumeFooter() {
                   </li>
                   <li>
                     <Link
-                      to={"#"}
+                      to={"property"}
                       className="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
                     >
                       property
@@ -278,7 +278,7 @@ export default function CostumeFooter() {
                   </li>
                   <li>
                     <Link
-                      to={"#"}
+                      to={"blog"}
                       className="white-hover light-gray-text-color text-decoration-none text-capitalize fs-5"
                     >
                       blog

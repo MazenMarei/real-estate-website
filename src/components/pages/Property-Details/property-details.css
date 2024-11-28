@@ -1,0 +1,58 @@
+.text-danger {
+  color: #d9534f !important;
+}
+
+.card {
+  background-color: #fff !important;
+  border: 1px solid #e6e6e6 !important;
+  border-radius: 8px !important;
+  padding: 20px !important;
+}
+
+ul {
+  list-style-type: none !important;
+  padding: 0 !important;
+}
+
+ul li {
+  padding: 5px 0 !important;
+}
+
+.btn-danger {
+  background-color: #d9534f !important;
+  border-color: #d43f3a !important;
+}
+
+.google-map {
+  padding-bottom: 50% !important;
+  position: relative !important;
+}
+
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+img {
+  border-radius: 5px !important;
+}
+
+.img-thumbnail {
+  max-width: 100px !important;
+  height: auto !important;
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}

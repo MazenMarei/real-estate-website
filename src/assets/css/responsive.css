@@ -10,10 +10,20 @@
       height: 200px !important;
     }
   }
+  .res-text {
+    font-size: inherit !important;
+    text-wrap: inherit !important;
+  }
+  
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .res-text {
+    font-size: inherit !important;
+    text-wrap: inherit !important;
+  }
+
 }
 
 /* Large devices (desktops, 992px and up) */

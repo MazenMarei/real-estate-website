@@ -83,7 +83,7 @@ export default function CostumeNavbar() {
           className={`align-middle m-0 ${home ? "d-lg-none" : ""} `}
         >
           <Link to="./" className="text-decoration-none">
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" className="me-2" />
             <span className="align-bottom fs-4 fw-bold gray-text-color">
               FindHouse
             </span>
@@ -91,7 +91,10 @@ export default function CostumeNavbar() {
         </Navbar.Brand>
 
         {/* -------------------------- navbar collapse div -------------------------- */}
-        <Navbar.Collapse id="navbarNav" className="justify-content-end order-1 order-lg-0">
+        <Navbar.Collapse
+          id="navbarNav"
+          className="justify-content-end order-1 order-lg-0"
+        >
           {/* ----------------------------- navbar links ----------------------------- */}
           <Nav className="ml-auto text-capitalize fs-5">
             <ul className="navbar-nav ml-auto text-capitalize fs-5 ">
@@ -108,7 +111,7 @@ export default function CostumeNavbar() {
               <li className="nav-item order-1">
                 <a
                   className="nav-link dark-secondary-color primary-color-hover"
-                  href="#featuredProperties"
+                  href="property"
                 >
                   property
                 </a>
@@ -117,7 +120,7 @@ export default function CostumeNavbar() {
               <li className="nav-item order-lg-2 order-1">
                 <a
                   className="nav-link dark-secondary-color primary-color-hover"
-                  href="#about"
+                  href="services"
                 >
                   services
                 </a>
@@ -126,7 +129,7 @@ export default function CostumeNavbar() {
               <li className="nav-item order-lg-3 order-1">
                 <Link
                   className="nav-link dark-secondary-color primary-color-hover"
-                  to={"/contact-us"}
+                  to={"blog"}
                 >
                   blog
                 </Link>
@@ -158,10 +161,12 @@ export default function CostumeNavbar() {
             <UserWidget home={home} />
           ) : (
             <>
-              <FontAwesomeIcon icon={faUser} className="fs-4  p-0 col m-0" />
-              <div className="d-flex flex-row gap-0 justify-content-around align-items-center col">
+              <FontAwesomeIcon icon={faUser} className={"fs-4  p-0 col m-0 "} />
+              <div className="d-flex flex-row gap-0 justify-content-around align-items-center col mt-2">
                 <button
-                  className="bg-transparent border-0 col p-0 primary-color-hover"
+                  className={
+                    "bg-transparent border-0 col p-0 primary-color-hover "
+                  }
                   onClick={handleShow}
                 >
                   Login
@@ -175,7 +180,9 @@ export default function CostumeNavbar() {
                   <path fill="currentColor" d="m7 21l7.9-18H17L9.1 21z" />
                 </svg>
                 <button
-                  className="bg-transparent border-0 col p-0 primary-color-hover"
+                  className={
+                    "bg-transparent border-0 col p-0 primary-color-hover "
+                  }
                   onClick={handleShow}
                 >
                   Register

@@ -6,6 +6,7 @@ export default function ScrollBtn() {
   const [visible, setVisible] = useState(false);
   const [animationClass, setAnimationClass] = useState("");
 
+  /// Show the scroll up button when the user scrolls down
   useEffect(() => {
     const handleScroll = () => {
       if (
@@ -30,6 +31,8 @@ export default function ScrollBtn() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [visible]);
+
+  /// Scroll to the top of the page
   const handleClick = () => {
     window.scrollTo({
       top: 0,
@@ -43,6 +46,7 @@ export default function ScrollBtn() {
       }, 300);
     }, 1000);
   };
+
   return (
     <button
       className={`btn secondary-bg rounded-circle scroll-up-btn position-fixed z-3 bottom-0 end-0 me-3 mb-3 ${

@@ -208,3 +208,8 @@
   right: 0 !important;
   left: auto !important;
 }
+
+.res-text {
+  font-size: calc(1.5rem - 2vw) !important;
+  text-wrap: nowrap !important;
+}

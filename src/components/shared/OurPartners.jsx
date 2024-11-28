@@ -22,7 +22,7 @@ export default function OurPartners() {
           </p>
         </div>
 
-        {/* <!-- ----------------------------- partners row ----------------------------- --> */}
+        {/* <!-- ----------------------------- partners row swiper ----------------------------- --> */}
         <div className="row justify-content-center gap-5 mb-5">
           <Swiper
             slidesPerView={1}
@@ -48,7 +48,7 @@ export default function OurPartners() {
               },
             }}
           >
-
+            {/* partner swiper slides */}
             <SwiperSlide>
               <div className="card p-4 border-0 h-100">
                 <div className="p-5 h-100 d-flex flex-row justify-content-end align-items-end">
@@ -60,6 +60,7 @@ export default function OurPartners() {
                 </div>
               </div>
             </SwiperSlide>
+            {/* partner swiper slides */}
 
             <SwiperSlide>
               <div className="card p-4 border-0 h-100">
@@ -72,6 +73,7 @@ export default function OurPartners() {
                 </div>
               </div>
             </SwiperSlide>
+            {/* partner swiper slides */}
 
             <SwiperSlide>
               <div className="card p-4 border-0 h-100">
@@ -85,6 +87,7 @@ export default function OurPartners() {
               </div>
             </SwiperSlide>
 
+            {/* partner swiper slides */}
             <SwiperSlide>
               <div className="card p-4 border-0 h-100">
                 <div className="p-5 h-100 d-flex flex-row justify-content-end align-items-end">
@@ -97,6 +100,7 @@ export default function OurPartners() {
               </div>
             </SwiperSlide>
 
+            {/* partner swiper slides */}
             <SwiperSlide>
               <div className="card p-4 border-0 h-100">
                 <div className="p-5 h-100 d-flex flex-row justify-content-end align-items-end">

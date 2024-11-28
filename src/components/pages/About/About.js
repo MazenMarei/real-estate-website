@@ -9,6 +9,7 @@ import OurPartners from "../../shared/OurPartners";
 import PageMainImage from "../../shared/PageMainImage";
 
 export default function About() {
+
   const [show, setShow] = useState(false);
   const [autoplay, setAutoplay] = useState(1);
 
@@ -27,8 +28,11 @@ export default function About() {
       <PageMainImage image={breadcrumb} />
 
       <section id="aboutUs">
+
         <div className="container pt-5 p-0">
+
           <div className="row pt-5 p-0 w-100 mx-auto">
+            {/* /* ------------------------ about us lef side content -----------------------  */}
             <div className="col-lg-7 col-12 d-flex flex-column gap-4 py-5 p-0 ps-2">
               <p className="gray-text-color fs-5 fw-bold">
                 Maurice ac consectetur ante, dapibus gravida tellus. Nollam
@@ -53,6 +57,7 @@ export default function About() {
                 libero amet, laborum qui nulla quae alias tempora.
               </p>
             </div>
+            {/* /* ------------------------ about us right side video -----------------------  */}
             <div className="col-lg-5 col-12 py-5 position-relative">
               <img
                 src={bgVideoImg}
