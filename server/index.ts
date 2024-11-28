@@ -22,7 +22,7 @@ app.use("/uploads", express.static(path.join(__dirname, "src", "uploads")));
 /// connect to mongodb
 
 mongoose.connect(
-  "mongodb+srv://education:66mIrIRcfpCLm2Gd@education.auxxc.mongodb.net/realestateproject?retryWrites=true&w=majority&appName=realestateproject"
+  ""
 );
 
 /// check connection
