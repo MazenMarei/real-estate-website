@@ -31,10 +31,6 @@ The website provides a user-friendly interface for browsing and searching for pr
 - Moustafa Shaaban : Properties Page , properties Details Page.
 - Mira Makram : Services Page , Conatct-us Page.
 
-  
-## Screenshots
-![Home Page](https://cdn.discordapp.com/attachments/1278084963107082310/1280188841160085545/screencapture-127-0-0-1-5500-index-html-2024-09-02-18_31_27.png?ex=66d92684&is=66d7d504&hm=871cad65cd7f57207bc2d6959adcc49c6b5b26f10cb19f35fa5e33d2b43f2836&)
-
 ## Installation
 To run this project locally, follow these steps (You need to install node js first):
 
