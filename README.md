@@ -37,14 +37,14 @@ To run this project locally, follow these steps (You need to install node js fir
 1. **Open cmd**
 
 2. **Clone the repository**:
-    ```sh
-    git clone https://github.com/MazenMarei/real-estate-website.git
-    ```
+ ```sh
+   git clone https://github.com/MazenMarei/real-estate-website.git
+  ```
 
 3. **Navigate to the project directory**:
-    ```sh
-    cd real-estate-website
-    ```
+   ```sh
+   cd real-estate-website
+   ```
 4. **Switch To fullstack branch**:
   ```sh 
   git branch fullstack
@@ -52,7 +52,7 @@ To run this project locally, follow these steps (You need to install node js fir
 
 5. **Navigate to the Front end directory**:
 ```sh 
-  cd client
+cd client
 ```
 
 6. **Install React and dependencies**:
