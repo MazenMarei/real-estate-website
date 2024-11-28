@@ -16,7 +16,7 @@ export interface IUser {
   city: string;
   country: string;
   postalCode: string;
-  
+  about: string;
 }
 
 const userSchema = new mongoose.Schema({
@@ -58,7 +58,7 @@ const userSchema = new mongoose.Schema({
     {
       type: mongoose.Schema.Types.ObjectId,
       ref: "messages",
-    }
+    },
   ],
   phone: {
     type: String,
@@ -81,6 +81,10 @@ const userSchema = new mongoose.Schema({
     default: "",
   },
   date: { type: Date, default: Date.now },
+  about: {
+    type: String,
+    default: "",
+  },
 });
 
 const User: mongoose.Model<IUser> = mongoose.model<IUser>("users", userSchema);

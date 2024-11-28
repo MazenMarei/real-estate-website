@@ -7,18 +7,23 @@ module.exports = {
   route: "/register",
   router: router,
   func: () => {
+    /// register user
     router.post("/", (req: any, res: any) => {
-      console.log(req.body);
-
+      /// validate user input
       usersModal.handleUserValidation(req.body);
+
       const { error } = usersModal.handleUserValidation({
         name: req.body.name,
         email: req.body.email,
         password: req.body.password,
         role: req.body.role,
       });
+
+      /// check if there is an error
       if (error)
         return res.status(400).send({ message: error.details[0].message });
+
+      /// generate salt and hash the password
       const salt = genSaltSync(10);
       const user = new usersModal.User({
         name: req.body.name,
@@ -27,6 +32,8 @@ module.exports = {
         role: req.body.role,
         profileImage: "defaultProfileImage.png",
       });
+
+      /// save the user
       user
         .save()
         .then(() => {
@@ -36,7 +43,6 @@ module.exports = {
           if (err.code === 11000) {
             res.status(400).send({ message: "Email already exists" });
           } else {
-            console.log(err);
             res.status(400).send({ message: "Something went wrong" });
           }
         });

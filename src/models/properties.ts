@@ -13,45 +13,48 @@ export interface IProperty {
   aria: number;
   city: string;
   location: string;
-  region: string;
-  images: string[];
+  gallery: string[];
+  propertyImage: string;
   date: Date;
   _id: string;
   owner: string;
   features: {
     airConditioning: boolean;
-    bedding: boolean;
-    cableTv: boolean;
-    heating: boolean;
-    internet: boolean;
+    barbeque: boolean;
+    dryer: boolean;
+    gym: boolean;
+    laundry: boolean;
+    lawn: boolean;
     microwave: boolean;
-    smoking: boolean;
+    outdoorShower: boolean;
+    refrigerator: boolean;
+    sauna: boolean;
     swimmingPool: boolean;
+    tvCable: boolean;
     washer: boolean;
     wifi: boolean;
+    windowCoverings: boolean;
   };
 }
 
 const propertySchema: mongoose.Schema = new mongoose.Schema({
   title: {
     type: String,
-    required: true,
-    minlength: 5,
-    maxlength: 255,
+    required: false,
+    minlength: 10,
   },
   description: {
     type: String,
-    required: true,
-    minlength: 5,
-    maxlength: 1024,
+    required: false,
+    minlength: 20,
   },
   price: {
     type: Number,
-    required: true,
+    required: false,
   },
   type: {
     type: String,
-    required: true,
+    required: false,
   },
   soled: {
     type: Boolean,
@@ -59,37 +62,45 @@ const propertySchema: mongoose.Schema = new mongoose.Schema({
   },
   bedrooms: {
     type: Number,
-    required: true,
+    required: false,
   },
   bathrooms: {
     type: Number,
-    required: true,
+    required: false,
   },
   garage: {
     type: Number,
-    required: true,
+    required: false,
   },
   aria: {
     type: Number,
-    required: true,
+    required: false,
   },
   city: {
     type: String,
-    required: true,
+    required: false,
   },
   location: {
     type: String,
-    required: true,
+    required: false,
   },
-  region: {
-    type: String,
-    required: true,
-  },
-  images: [
+  gallery: [
     {
       type: String,
     },
   ],
+  propertyImage: {
+    type: String,
+    required: false,
+  },
+  mapIframe: {
+    type: String,
+    required: false,
+  },
+  saleType: {
+    type: String,
+    required: false,
+  },
   date: {
     type: Date,
     default: Date.now,
@@ -103,19 +114,23 @@ const propertySchema: mongoose.Schema = new mongoose.Schema({
       type: Boolean,
       default: false,
     },
-    bedding: {
+    barbeque: {
       type: Boolean,
       default: false,
     },
-    cableTv: {
+    dryer: {
       type: Boolean,
       default: false,
     },
-    heating: {
+    gym: {
       type: Boolean,
       default: false,
     },
-    internet: {
+    laundry: {
+      type: Boolean,
+      default: false,
+    },
+    lawn: {
       type: Boolean,
       default: false,
     },
@@ -123,11 +138,23 @@ const propertySchema: mongoose.Schema = new mongoose.Schema({
       type: Boolean,
       default: false,
     },
-    smoking: {
+    outdoorShower: {
+      type: Boolean,
+      default: false,
+    },
+    refrigerator: {
+      type: Boolean,
+      default: false,
+    },
+    sauna: {
       type: Boolean,
       default: false,
     },
     swimmingPool: {
+      type: Boolean,
+      default: false,
+    },
+    tvCable: {
       type: Boolean,
       default: false,
     },
@@ -136,6 +163,10 @@ const propertySchema: mongoose.Schema = new mongoose.Schema({
       default: false,
     },
     wifi: {
+      type: Boolean,
+      default: false,
+    },
+    windowCoverings: {
       type: Boolean,
       default: false,
     },
